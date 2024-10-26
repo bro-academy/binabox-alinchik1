@@ -1,111 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <link rel="stylesheet" href="style.css"> --> <!-- uncomment styles --> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <div id="container" class="container">
-        <div class="profile-folder">
-          <div class="folder">
-            <div class="title">
-              Yaba Kawaii Studio
-              <span class="title-btn">
-                <span class="btn1"></span>
-                <span class="btn2"></span>
-                <span class="btn3"></span>
-              </span>
-            </div>
-
-            <div class="body">
-              <div class="profile-icon-box">
-                <p id="typeText"></p>
-                <div class="profile-icon">
-                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon.png" /> <!-- Photo -->
-                </div>
-              </div>
-
-              <div class="name">
-                <p>AYAKO YOKOYA</p> <!-- Name -->
-              </div>
-              <div class="aboutme">
-                <p>Creative Developer <span>(I wanna be...)</span></p> <!-- Profession -->
-              </div>
-
-              <div class="sns-btn-box">
-                <p>My sns accounts are...</p>
-                <a
-                  href="https://github.com/ayakoyokoya/"
-                  target="_blank"
-                  class="sns-btn"
-                >
-                  github <!-- Link to social media 1 -->
-                </a>
-                <a
-                  href="https://twitter.com/ayakoyokoya"
-                  target="_blank"
-                  class="sns-btn"
-                >
-                  twitter <!-- Link to social media 2 -->
-                </a>
-              </div>
-
-              <div class="portfolio-btn-box">
-                <p>
-                  Do you want to see error? <!-- Any text -->
-                </p>
-                <div class="portfolio">
-                  <button id="error-btn" class="error-btn">
-                    error?
-                  </button>
-                  <a
-                    href="https://ayakoyokoya.github.io/yaba-kawaii-audio-visualizer/dist/"
-                    target="_blank"
-                    class="portfolio-btn"
-                  >
-                    yes! 
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <template id="template">
-        <div class="error">
-          <div class="folder folder_error">
-            <div class="title">
-              Error
-              <span class="title-btn">
-                <span class="btn1"></span>
-                <span class="btn2"></span>
-                <span class="btn3"></span>
-              </span>
-            </div>
-
-            <div class="body">
-              <div class="profile-icon-box">
-                <div class="profile-icon">
-                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon2.png" />
-                </div>
-              </div>
-
-              <div class="name">
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <button class="ok-error-btn" onclick="window.location.reload();">OK...</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </template>
-      <!-- <script src="script.js"></script> --> <!-- uncomment script --> 
+  <header>
+    <img src="img/Logos.svg" alt="">
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Catalog</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+    <input type="seach button">
+    <a href="">Discord</a>
+    <button>Connect</button>
+  </header>
+  <main>
+    <section>
+      <h1>With <strong>Binabox</strong> Explore NFT collection</h1>
+      <p>We are the best way to check the rarity of NFT collection</p>
+      <li>2240+</li>
+      <li>Total iteam</li>
+      <li>1000+</li>
+      <li>Profile whitelisted</li>
+    </section>
+    <section>
+      <h2>Catalog</h2>
+      <a href="">See all</a>
+      <button>Right</button>
+      <button>Left</button>
+    <div>
+      <catalog-item>
+        <img src="" alt="">
+        <p class="catalog-price">$199</p>
+        <p class="catalog-describtion">Name product</p>
+      </catalog-item>
+    </div>
+    <div class="catalog-item"><img src="" alt="">
+      <p class="catalog-price">$199</p>
+      <p class="catalog-describtion">Name Product</p>
+    </div>
+    <div class="catalog-item">
+      <img src="" alt="">
+      <p class="catalog-price">$199</p>
+      <p class="catalog-describtion">Name Product</p>
+    </div>
+    <div class="catalog-item">
+      <img src="" alt="">
+      <p class="catalog-price">$199</p>
+      <p class="catalog-describtion">Name Product</p>
+    </div>
+    </section>
+    <section>
+      <h3>Our blog</h3>
+      <article>
+        <div class="p">Tony Nguyen</div>
+        <p class="time">20 Jun 2022</p>
+        <h4>Sonic live</h4>
+        <h5>One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</h5>
+        <a href="" class="read-more">Read more</a>
+      </article>
+      <a href="" class="read-more">Read more</a>
+    </section>
+    <section>
+      <article>
+       <h3>About us</h3>
+       <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla partiatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est labourm velit esse cillum odlore eu fugiat nulla pariatu epreur sint occaecat</p>
+       <ol class="achivements">
+        <div class="li">01 High quality</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="li">02 Big collection</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="li">03 Top Resourse</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="li">04 Big comunity</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+       </article>
+       <a href="" class="read-more">Read more</a> 
+    </section>
+  </main>
+  <footer></footer>
 </body>
 </html>
