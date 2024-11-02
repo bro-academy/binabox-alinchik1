@@ -9,18 +9,28 @@
 </head>
 <body class="body">
   <header class="header">
+    <a href="" class="binabox">
     <img src="img/Logos.svg" alt="" class="logo">
+    </a>
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="" class="nav-link">Home</a></li>
+        <li class="navigation-item"><a href="" class="nav-link-home">Home</a></li>
         <li class="navigation-item"><a href="blog-article.html" class="nav-link">Blog</a></li>
         <li class="navigation-item"><a href="" class="nav-link">Catalog</a></li>
         <li class="navigation-item"><a href="" class="nav-link">Contact Us</a></li>
       </ul>
     </nav>
-    <button class="search-bar" type="button">Search</button>
-    <a href="https://discord.com" target="_blank" class="discord">Discord</a>
-    <button class="connect" type="button">Connect</button>
+    <ul class="header-buttons">
+      <li class="seach-button">
+        <button class="search" type="button">Search</button>
+      </li>
+      <li class="discord-button">
+        <a href="https://discord.com" target="_blank" class="discord">Discord</a>
+      </li>
+      <li class="connect-button">
+        <button class="connect" type="button">Connect</button>
+      </li>
+    </ul>
   </header>
   <main class="content">
     <section class="headline">
@@ -36,38 +46,48 @@
       <a href="" class="see-all">See all</a>
       <button class="move-right" type="button">Right</button>
       <button class="move-left" type="button">Left</button>
-      <article class="catalog-items">
-       <div class="catalog-item">
-        <p class="label">New</p>
-        <img src="" alt="" class="catalog-image">
-        <p class="catalog-price">$199</p>
-        <h3 class="product-name">Name product</h3>
-       </div>
-       <div class="catalog-item">
-        <p class="label">New</p>
-        <img src="" alt="" class="catalog-image">
-        <p class="catalog-price">$199</p>
-        <h3 class="product-name">Name Product</h3>
-       </div>
-       <div class="catalog-item">
-        <p class="label">Sold out</p>
-        <img src="" alt="" class="catalog-image">
-        <p class="catalog-price">$199</p>
-        <h3 class="product-name">Name Product</h3>
-       </div>
-       <div class="catalog-item">
-        <p class="label">New</p>
-        <img src="" alt="" class="catalog-image">
-        <p class="catalog-price">$199</p>
-        <h3 class="product-name">Name Product</h3>
-       </div>
-       <div class="catalog-item">
-        <p class="label">New</p>
-        <img src="" alt="" class="catalog-image">
-        <p class="catalog-price">$199</p>
-        <h3 class="product-name">Name Product</h3>
-      </div>
-      </article>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <article class="catalog-product">
+            <p class="label">New</p>
+            <img src="" alt="" class="product-image">
+            <p class="product-price">$199</p>
+            <h3 class="product-name">Name Product</h3>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="catalog-product">
+            <p class="label">New</p>
+            <img src="" alt="" class="product-image">
+            <p class="product-price">$199</p>
+            <h3 class="product-name">Name Product</h3>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="catalog-product">
+            <p class="label">Sold out</p>
+            <img src="" alt="" class="product-image">
+            <p class="product-price">$199</p>
+            <h3 class="product-name">Name Product</h3>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="catalog-product">
+            <p class="label">New</p>
+            <img src="" alt="" class="product-image">
+            <p class="product-price">$199</p>
+            <h3 class="product-name">Name Product</h3>
+          </article>
+        </li>
+        <li class="catalog-item">
+          <article class="catalog-product">
+            <p class="label">New</p>
+            <img src="" alt="" class="product-image">
+            <p class="product-price">$199</p>
+            <h3 class="product-name">Name Product</h3>
+          </article>
+        </li>
+      </ul>
     </section>
     <section class="our-blog">
       <h2 class="section-name">Our blog</h2>
@@ -99,7 +119,7 @@
         <h3 class="skills-name">Top resourse</h3>
         <p class="skills-description">Lorem Ipsum in simply dummy text of the printing and Ipsum typessetting industry.</p>
        </div>
-       <div class="Big-community">
+       <div class="big-community">
         <h3 class="skills-name">Big community</h3>
         <p class="skills-description">Lorem Ipsum in simply dummy text of the printing and Ipsum typessetting industry.</p>
        </div>
@@ -107,19 +127,33 @@
     </section>
     <section class="our-team">
       <h2 class="section-name">Our team</h2>
-       <div>
-        <img src="" alt="profile-picture" class="profile-picture">
-          <h3 class="profile-name">Jason Smith</h3>
-          <p class="profile-position">Co-founder</p>
-        <div class="social-media">
-          <a href="" class="social-media-items"><img src="" alt="Twitter" class="twitter-link"></a>
-          <a href="" class="social-media-items"><img src="" alt="facebook" class="facebook-link"></a>
-          <a href="" class="social-media-items"><img src="" alt="telegram" class="telegram-link"></a>
-          <a href="" class="social-media-items"><img src="" alt="LinkedIn" class="linkedin-link"></a>
-          <a href="" class="social-media-items"><img src="" alt="instargam" class="instagram-link"></a>
-        </div>
-       </div>
-     </section>
+      <ul class="team-members-list">
+        <li class="team-member">
+          <img src="" alt="" class="profile-picture">
+          <h3 class="team-member-name">Jason Smith</h3>
+          <p class="team-member-position">Co-founder</p>
+          <div class="social-media">
+            <a href="" class="social-media-items"><img src="" alt="Twitter" class="twitter-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="facebook" class="facebook-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="telegram" class="telegram-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="LinkedIn" class="linkedin-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="instargam" class="instagram-link"></a>
+          </div>  
+        </li>
+        <li class="team-member">
+          <img src="" alt="" class="profile-picture">
+          <h3 class="team-member-name">Jason Smith</h3>
+          <p class="team-member-position">Co-founder</p>
+          <div class="social-media">
+            <a href="" class="social-media-items"><img src="" alt="Twitter" class="twitter-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="facebook" class="facebook-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="telegram" class="telegram-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="LinkedIn" class="linkedin-link"></a>
+            <a href="" class="social-media-items"><img src="" alt="instargam" class="instagram-link"></a>
+          </div>  
+        </li>
+      </ul>
+    </section>
     <section class="faq-section">
       <h2 class="section-name">FAQs</h2>
         <details class="faq-item">
@@ -168,12 +202,38 @@
         </div>
       </div>
       <div class="footer-social-media">
-        <a href="" class="social-media-link"><img src="" alt="Twitter" class="twitter-link"></a>
-        <a href="" class="social-media-link"><img src="" alt="facebook" class="facebook-link"></a>
-        <a href="" class="social-media-link"><img src="" alt="telegram" class="telegram-link"></a>
-        <a href="" class="social-media-link"><img src="" alt="youtube" class="youtube-link"></a>
-        <a href="" class="social-media-link"><img src="" alt="tiktok" class="tiktok-link"></a>
-        <a href="" class="social-media-link"><img src="" alt="discord" class="discord-link"></a>
+        <ul class="social-media-list">
+          <li class="twitter">
+            <a href="" class="social-media-link">
+              <img src="" alt="Twitter" class="twitter-link">
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="" class="social-media-link">
+              <img src="" alt="facebook" class="facebook-link">
+            </a>
+          </li>
+          <li class="telegram">
+            <a href="" class="social-media-link">
+              <img src="" alt="telegram" class="telegram-link">
+            </a>
+          </li>
+          <li class="youtube">
+            <a href="" class="social-media-link">
+              <img src="" alt="youtube" class="youtube-link">
+            </a>
+          </li>
+          <li class="tiktok">
+            <a href="" class="social-media-link">
+              <img src="" alt="tiktok" class="tiktok-link">
+            </a>
+          </li>
+          <li class="discord">
+            <a href="" class="social-media-link">
+              <img src="" alt="discord" class="discord-link">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
