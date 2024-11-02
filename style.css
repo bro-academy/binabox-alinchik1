@@ -119,3 +119,25 @@ body {
   line-height: 28px;
   color: #F5F8FB;
 }
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+  padding-right: 200px;
+  padding-bottom: 64px;
+  padding-left: 200px;
+  width: 1,728px;
+  height: 640px;
+}
+h1 {
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  width: 1328px;
+  height: 124px;
+  color:#F5F8FB
+
+
+}
