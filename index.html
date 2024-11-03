@@ -49,11 +49,16 @@
        </div>
     </section>
     <section class="catalog">
-      <h2 class="section-name">Catalog</h2>
-      <a href="" class="see-all">See all</a>
-      <button class="move-right" type="button">Right</button>
-      <button class="move-left" type="button">Left</button>
-      <ul class="catalog-list">
+      <div class="section-navigation">
+       <h2 class="section-name">Catalog</h2>
+       <hr class="catalog-separator">
+       <a href="" class="see-all">See all</a>
+       <hr class="vertical-separator">
+       <button class="move-left" type="button">&lt;</button>
+       <button class="move-right" type="button">&gt;</button>
+      </div>
+      <div class="product-container">
+       <ul class="catalog-list">
         <li class="catalog-item">
           <article class="catalog-product">
             <p class="label">New</p>
@@ -82,8 +87,10 @@
           <article class="catalog-product">
             <p class="label">New</p>
             <img src="" alt="" class="product-image">
-            <p class="product-price">$199</p>
-            <h3 class="product-name">Name Product</h3>
+            <div class="product-description">
+             <p class="product-price">$199</p>
+             <h3 class="product-name">Name Product</h3>
+            </div>
           </article>
         </li>
         <li class="catalog-item">
@@ -94,12 +101,13 @@
             <h3 class="product-name">Name Product</h3>
           </article>
         </li>
-      </ul>
+       </ul>
+      </div>
     </section>
     <section class="our-blog">
       <h2 class="section-name">Our blog</h2>
       <article class="sonic-live">
-        <p class="label">NFT</p>
+        <p class="label-NFT">NFT</p>
         <img src="" alt="big-face" class="big-face-image">
         <p class="artist-name">Tony Nguyen</p>
         <time datetime="2022-06-20" class="time">20 Jun 2022</time>
