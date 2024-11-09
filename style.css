@@ -69,15 +69,28 @@ body {
   width: 188px;
   height: 48px;
   border: 2px solid rgba(208, 215, 251, 0.17);
-  color: #E7EEF7;
+  color: rgba(231, 238, 247, 0.66);
   background-color: transparent;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  padding: 8px 12px;
   gap: 8px;  
+  background-image: 
+   url(img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+}
+.search-button::after {
+  content: url(img/vertical-separator.svg);
+  display: inline-block;
+  width: 2px;
+  height: 24px;
+  border-radius: 1px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 .discord {
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +107,10 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #F5F8FB;
+  background-image: 
+  url(img/discrord-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
 }
 .connect {
   display: flex;
@@ -113,6 +130,14 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #F5F8FB;
+  background-image: 
+  url(img/connect-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+}
+.content {
+  background:
+  url(img/box-banner-lines.svg) top 550px right / 337.62px 377.48px no-repeat;
 }
 .banner {
   justify-content: space-between;
@@ -206,6 +231,7 @@ body {
   padding: 64px;
   gap: 40px;
   justify-content: space-between;
+  background-image: 
 }
 .section-navigation {
   width: 1600px;
@@ -213,6 +239,19 @@ body {
   gap: 32px;
   display: flex;
   align-items: center;
+  background-image: url(img/catalog-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.section-name-catalog {
+  width: 60px;
+  height: 32px;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 40px;
+
 }
 .section-name {
   width: 115px;
@@ -257,6 +296,9 @@ body {
   border: 2px solid rgba(208, 215, 251, 0.17);
   padding: 16px;
   gap: 8px;
+  background-image: url(img/left-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .move-right {
   width: 48px;
@@ -264,6 +306,9 @@ body {
   padding: 16px;
   gap: 8px;
   background-color: #0265DC;
+  background-image: url(img/right-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .product-container {
   display: flex;
@@ -434,8 +479,20 @@ body {
   font-family:'Poppins', Arial, sans-serif; 
   font-weight: 600;
   font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 0px;
+  line-height: 20px;  
+  padding-left: 20px;
+}
+.artist-name {
+  background-image: url(img/user-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: -10px;
+}
+.time {
+  background-image: url(img/calendar-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: -22px;
 }
 .vertical-separation {
   width: 2px;
@@ -450,7 +507,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  margin-bottom: 0px;
+  margin-top: -10px;
 }
 .article-content {
   width: 736px;
@@ -459,6 +516,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-top: -60px;
 }
 .sonic-live-content {
   width: 736px;
@@ -480,6 +538,9 @@ body {
   font-weight: 600;
   align-self: flex-start;
   margin-top: auto;
+  background-image: url(img/right-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right 50px;
 }
 .twitter-link {
   background-image: url(img/twitter-icon.svg) center / 40px 40px no-repeat;
