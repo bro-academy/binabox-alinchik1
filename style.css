@@ -379,6 +379,7 @@ body {
 .product-image {
   width: 240px;
   height: 324px;
+  background-color: #0265DC;
 }
 .product-description {
   width: 240px;
@@ -430,19 +431,20 @@ body {
   height: 900px;
   min-width: 512px;
   padding: 24px;
-  gap: 24px;
+  gap: 10px;
   background-color: #1D1C28;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
+ 
 }
 .sonic-live-small {
   width: 784px;
   height: 434px;
   min-width: 512px;
   padding: 24px;
-  gap: 24px;
+  gap: 10px;
   background-color: #1D1C28;
   box-sizing: border-box;
   display: flex;
@@ -453,6 +455,7 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 0px;
+  background-color: #0265DC;
 }
 .label-NFT {
   width: 46px;
@@ -468,6 +471,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   position: absolute;
+  align-items: right;
+  align-self: right;
 }
 .big-face-image {
   width: 736px;
@@ -680,4 +685,22 @@ body {
 .facebook-icon {
   background-image: url(img/facebook-icon.svg);
   background-repeat: no-repeat;
+}
+.faq-question {
+  background-image: url(img/plus-button-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right 50px;
+}
+.faq-answer {
+  background-image: url(img/minus-button-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right 50px;
+}
+.photo-caption, photo-caption1, photo-caption2 {
+  background-color: #0265DC;
+}
+.photo-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
