@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style-contact-us.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-<form action="">
-    <div>
-        <label>
-            Name
-            <input type="text" name="name">
-        </label>
-    </div>
-    <div>
-        <label>
-            Last name
-            <input type="text" name="lastname">
-        </label>
-    </div>
-    <div>
-        <label>
-            Date of birth
-            <input type="date" name="dateofbirth">
-        </label>
-    </div>
-    <div>
-        <input type="radio" name="gender" value="male" id="male-id">
-        <label for="male-id">Male</label>
-        <input type="radio" name="gender" value="female" id="female-id">
-        <label for="female-id">Female</label>
-    </div>
-    <div>
-        <label for="email-id">Email</label>
-        <input type="email" name="email" id="email-id" required>
-    </div>
-    <div>
-        <label for="tel-id">Phone number</label>
-        <input type="tel" name="telefon" id="tel-id" required>
-    </div>
-    <div>
-        <label for="textarea-id">Message</label>
-        <textarea name="message" id="textarea-id"></textarea>
-    </div>
-    <div>
-        <label for="checkbox-id">By clicking on the 'Send message' button I agree to <span> all the terms of the security policy</span></label>
-        <input type="checkbox" name="terms" id="checkbox-id">
-    </div>
-    <button>Send Message</button>
-</form>
+    <header class="header">
+        <a href="" class="binabox">
+        <img src="img/Logos.svg" alt="Binabox" class="logo" width="188" height="42">
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item"><a href="index.html" class="nav-link-home">Home</a></li>
+            <li class="navigation-item"><a href="blog-article.html" class="nav-link">Blog</a></li>
+            <li class="navigation-item"><a href="" class="nav-link">Catalog</a></li>
+            <li class="navigation-item"><a href="" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+        <ul class="header-buttons">
+          <li class="search-button">
+            <button class="search" type="button">Search</button>
+          </li>
+          <li class="discord-button">
+            <a href="https://discord.com" target="_blank" class="discord">Discord</a>
+          </li>
+          <li class="connect-button">
+            <button class="connect" type="button">Connect</button>
+          </li>
+        </ul>
+    </header>
+    <form action="" method="post">
+        <div>
+            <label>
+                Name
+                <input type="text" name="name">
+            </label>
+        </div>
+        <div>
+            <label>
+                Last name
+                <input type="text" name="lastname">
+            </label>
+        </div>
+        <div>
+            <label>
+                Date of birth
+                <input type="date" name="dateofbirth">
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="male" id="male-id">
+                <label for="male-id">Male</label>
+            <input type="radio" name="gender" value="female" id="female-id">
+                <label for="female-id">Female</label>
+        </div>
+        <div>
+            <label for="email-id">Email</label>
+                <input type="email" name="email" id="email-id" required>
+        </div>
+        <div>
+            <label for="tel-id">Phone number</label>
+                <input type="tel" name="telefon" id="tel-id" required>
+        </div>
+        <div>
+            <label for="textarea-id">Message</label>
+                <textarea name="message" id="textarea-id"></textarea>
+        </div>
+        <div>
+            <label for="checkbox-id">By clicking on the 'Send message' button I agree to <span> all the terms of the security policy</span></label>
+                <input type="checkbox" name="terms" id="checkbox-id">
+        </div>
+        <button type="button">Send Message</button>
+    </form>
 </body>
 </html>
