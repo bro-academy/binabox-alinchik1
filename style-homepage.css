@@ -187,12 +187,21 @@ body {
   gap: 8px;
 }
 
+.achievements {
+  display: flex;
+  gap: 64px;
+}
+
 .achievement-info {
   width: 119px;
   height: 86px;
   gap: 4px;
   list-style-type: none;
   font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  white-space: nowrap;
 }
 
 .achievement-amount {
@@ -215,6 +224,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #F5F8FB;
+  margin-top: 50px;
 }
 
 .connect-wallet {
@@ -254,19 +264,11 @@ body {
   background-image: url(img/catalog-icon.svg);
   background-repeat: no-repeat;
   background-position: center left;
+  padding-left: 30px;
+  justify-items: center;
 }
 
-.section-name-catalog {
-  width: 60px;
-  height: 32px;
-  font-family: 'Bakbar One', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  padding-left: 40px;
-}
-
-.section-name {
+.catalog__header {
   width: 115px;
   height: 36px;
   padding: 2px 2px;
@@ -275,8 +277,18 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  display: flex;
+  align-self: center;
+  align-items: center;
 }
 
+.catalog__header::after {
+  content: url(img/Seporator.svg);
+  display: inline-block;
+  width: 1167px;
+  height: 2px;
+  border-radius: 2px;
+}
 .see-all, .move-right, .move-left {
   width: 254px;
   height: 48px;
@@ -571,12 +583,6 @@ body {
   margin-top: -22px;
 }
 
-.vertical-separation {
-  width: 2px;
-  height: 16px;
-  border-radius: 2px;
-}
-
 .article-name {
   width: 736px;
   height: 48px;
@@ -596,11 +602,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin-top: -60px;
-}
-
-.sonic-live-content {
-  width: 736px;
-  height: 96px;
 }
 
 .read-more {
@@ -707,6 +708,82 @@ body {
   line-height: 28px;
 }
 
+.our-team {
+  width: 1728px;
+  height: 888px;
+  padding: 64px;
+  gap: 40px;
+}
+
+.our-team__header {
+  text-align: center;
+  width: 1600px;
+  height: 48px;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+
+.our-team__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  height: 672px;
+  min-width: 1300px;
+  max-width: 1300px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.our-team__item {
+  width: 293px;
+  height: 316px;
+  min-width: 293px;
+  padding: 32px;
+  gap: 16px;
+  list-style: none;
+  text-align: center;
+  background-color: #1D1C28;
+}
+
+.profile-picture {
+  width: 127px;
+  height: 127px;
+  top: -7px;
+  left: -6px;
+  border-radius: 50%;
+}
+
+.team-member-name {
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  margin: 0;
+}
+
+.team-member-position {
+  font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  align-items: center;
+  margin: 0;
+}
+
+.social-media {
+  width: 266px;
+  height: 40px;
+  gap: 8px;
+  margin: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .social-media-list {
   display: flex;
   list-style: none;
@@ -715,23 +792,167 @@ body {
   justify-content: right;
 }
 
-.twitter-icon {
-  background-repeat: no-repeat;
+.faq {
+  width: 1728px;
+  height: 744px;
+  padding-top: 64px;
+  padding-right: 64px;
+  padding-bottom: 104px;
+  padding-left: 64px;
+  gap: 40px;
 }
 
-.facebook-icon {
-  background-image: url(img/facebook-icon.svg);
-  background-repeat: no-repeat;
+.faq__header {
+  width: 1600px;
+  height: 48px;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  align-items: center;
+  text-align: center;
 }
 
-.faq-question {
+.faq__summary {
+  width: 960px;
+  height: 80px;
+  padding: 24px;
+  gap: 16px;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  background-color: #1D1C28;
   background-image: url(img/plus-button-icon.svg);
   background-repeat: no-repeat;
   background-position: center right 50px;
+  list-style: none;
+  background-image: url(img/minus-button-icon.svg);
 }
 
-.faq-answer {
-  background-image: url(img/minus-button-icon.svg);
+.faq__answer {
+  width: 912px;
+  height: 48px;
+  font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #1D1C28;
+  line-height: none;
   background-repeat: no-repeat;
   background-position: center right 50px;
+}
+
+.footer {
+  width: 1728px;
+  height: 388px;
+  padding-top: 64px;
+  padding-right: 64px;
+  padding-bottom: 32px;
+  padding-left: 64px;
+  gap: 64px;
+  background-color: #1A1925;
+}
+
+.main-footer {
+  width: 1600px;
+  height: 156px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.main-footer__left {
+  width: 309px;
+  height: 94px;
+  gap: 12px;
+}
+
+.main-footer__logo {
+  width: 188px;
+  height: 42px;
+}
+
+.main-footer__text {
+  width: 320px;
+  height: 40px;
+  font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main-footer__right {
+  width: 328px;
+  height: 156px;
+  max-width: 360px;
+  gap: 24px;
+  display: flex;
+}
+
+.main-footer__right__header {
+  width: 101px;
+  height: 28px;
+  font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.main-footer_nav-list {
+  list-style: none;
+  padding-left: 0px;
+  white-space: nowrap;
+}
+
+.nav-items {
+  width: 37px;
+  height: 16px;
+  font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+}
+
+.bot-footer {
+  width: 1600px;
+  height: 72px;
+  border-top: 1px;
+  justify-content: space-between;
+  padding-top: 32px;
+  border-top: 1px solid rgba(191, 197, 238, 0.12);
+  align-self: center;
+}
+
+.bot-footer__left {
+  width: 242px;
+  height: 20px;
+}
+
+.bot-footer__text {
+  font-family:'Poppins', Arial, sans-serif; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: right;
+}
+
+.bot-footer__right {
+  width: 280px;
+  height: 40px;
+  gap: 8px;
+  margin-left: 75%;
+}
+
+.social-media__list {
+  display: flex;
+  list-style: none;
+}
+
+.social-media__icon {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  gap: 8px;
 }
