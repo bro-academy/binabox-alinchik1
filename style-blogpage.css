@@ -2,6 +2,9 @@
     width: 1728px;
     padding-top: 64px;
     gap: 64px;
+    background: 
+    url(img/Blog-page-banner.png) top left / 1728px 375px no-repeat,
+    url(img/blog-page-banner-wave.png) center / 1728px 133px no-repeat;
 }
 
 .blog-banner__header {
