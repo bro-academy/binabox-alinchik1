@@ -61,7 +61,7 @@ body {
     height: 48px;
   }
   
-  .search {
+  .button-search {
     width: 188px;
     height: 48px;
     border: 2px solid rgba(208, 215, 251, 0.17);
@@ -75,6 +75,7 @@ body {
      url(img/search.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
+    padding-left: 35px;
   }
   
   .search-button {
