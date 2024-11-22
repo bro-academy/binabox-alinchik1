@@ -185,7 +185,6 @@ body {
   width: 119px;
   gap: 4px;
   list-style-type: none;
-  font-family:'Poppins', Arial, sans-serif; 
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -206,7 +205,6 @@ body {
   height: 48px;
   gap: 16px;
   display: flex;
-  font-family:'Poppins', Arial, sans-serif; 
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -216,7 +214,6 @@ body {
 
 .connect-wallet {
   background-color: #0265DC;
-  font-family:'Poppins', Arial, sans-serif; 
   font-weight: 600;
   color: #F5F8FB;
   font-size: 18px;
@@ -251,6 +248,7 @@ body {
   background-position: center left;
   padding-left: 30px;
   justify-items: center;
+  align-items: center;
 }
 
 .catalog__header {
@@ -268,10 +266,12 @@ body {
 
 .catalog__header::after {
   content: url(img/Seporator.svg);
-  display: inline-block;
   width: 1167px;
   height: 2px;
   border-radius: 2px;
+  justify-content: space-between;
+  align-items: center;
+
 }
 .see-all, .move-right, .move-left {
   width: 254px;
@@ -421,7 +421,6 @@ body {
   font-size: 36px;
   line-height: 0px;
   letter-spacing: -0.5px;
-  margin-bottom: -20px;
 }
 
 .product-name {
@@ -429,7 +428,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 0px;
-  margin-bottom: -20px;
   color: rgba(239, 245, 250, 0.82);
 }
 
@@ -528,7 +526,6 @@ body {
 .artist-name, .time {
   width: 94px;
   gap: 8px;
-  font-family:'Poppins', Arial, sans-serif; 
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;  
@@ -659,7 +656,6 @@ body {
 .skills-description {
   text-align: left;
   margin-top: 1%;
-  font-family:'Poppins', Arial, sans-serif; 
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -720,7 +716,6 @@ body {
 }
 
 .team-member-position {
-  font-family:'Poppins', Arial, sans-serif; 
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;

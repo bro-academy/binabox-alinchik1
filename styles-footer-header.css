@@ -175,7 +175,6 @@ body {
   
   .main-footer__right__header {
     width: 101px;
-    font-family:'Poppins', Arial, sans-serif; 
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -209,7 +208,6 @@ body {
   }
   
   .bot-footer__text {
-    font-family:'Poppins', Arial, sans-serif; 
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
