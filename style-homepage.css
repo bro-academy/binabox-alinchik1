@@ -1,138 +1,3 @@
-body {
-  font-family:'Poppins', Arial, sans-serif; 
-  background-color: #0D0D15;
-  color:#F8F7FF;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1728px;
-  padding: 32px;
-  color: #0D0D15;
-}
-
-.binabox {
-  width: 188px;
-  height: 42px;
-}
-
-.navigation-list {
-  display: flex;
-}
-
-.navigation-item {
-  padding: 8px 20px;
-  gap: 8px;
-}
-
-.nav-link {
-  color: #F5F8FB;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  border: none;
-}
-
-.nav-link-home {
-  color: #F5F8FB;
-  text-decoration: none;
-  font-weight: 600;
-  border-bottom: 2px solid #0265DC;
-  gap: 8px;
-  width: 89px;
-  padding: 8px 20px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.header-buttons {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  text-decoration: none;
-  list-style: none;
-  color:#F8F7FF;
-  border: 0px;  
-  gap: 16px;
-  width: 547px;
-  height: 48px;
-}
-
-.search {
-  width: 188px;
-  height: 48px;
-  border: 2px solid rgba(208, 215, 251, 0.17);
-  color: rgba(231, 238, 247, 0.66);
-  background-color: transparent;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  gap: 8px;  
-  background-image: 
-   url(img/search.svg);
-  background-repeat: no-repeat;
-  background-position: center left 10px;
-}
-
-.search-button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.search-button::after {
-  content: url(img/vertical-separator.svg);
-  display: inline-block;
-  width: 2px;
-  height: 24px;
-  border-radius: 1px;
-  margin-left: 5px;
-  vertical-align: middle;
-}
-
-.discord {
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  border: 2px solid rgba(208, 215, 251, 0.17);
-  padding: 10px 24px;
-  gap: 8px;
-  color: #F5F8FB;
-  background-image: 
-  url(img/discrord-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center left 10px;
-}
-
-.connect {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  width: 159px;
-  height: 48px;
-  padding: 10px 20px;
-  gap: 8px;
-  background-color: #0265DC;
-  text-decoration: none;
-  color: #F5F8FB;
-  background-image: 
-  url(img/connect-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center left 10px;
-}
-
 .content {
   background:
   url(img/main-page-binabox-logo-background.svg) top 500px center / 3382px 378px no-repeat;
@@ -265,7 +130,7 @@ body {
 }
 
 .catalog__header::after {
-  content: url(img/Seporator.svg);
+  content: url(img/seporator.svg);
   width: 1167px;
   height: 2px;
   border-radius: 2px;
@@ -640,8 +505,8 @@ body {
   box-sizing: border-box;
   margin-bottom: 20px;
   background: 
-    url(img/bot-right-corner-02.svg) bottom right / 20% auto no-repeat,
-    url(img/top-left-corner-02.svg) top left / 20% auto no-repeat,
+    url(img/bot-right-corner.svg) bottom right / 20% auto no-repeat,
+    url(img/top-left-corner.svg) top left / 20% auto no-repeat,
     #1A1925;
 }
 

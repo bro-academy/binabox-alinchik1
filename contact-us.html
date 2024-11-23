@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style-contact-us.css">
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,70 +14,182 @@
 <body>
     <header class="header">
         <a href="" class="binabox">
-        <img src="img/Logos.svg" alt="Binabox" class="logo" width="188" height="42">
+        <img src="img/logos.svg" alt="Binabox" class="logo" width="188" height="42">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item"><a href="index.html" class="nav-link-home">Home</a></li>
+            <li class="navigation-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="navigation-item"><a href="blog-article.html" class="nav-link">Blog</a></li>
             <li class="navigation-item"><a href="" class="nav-link">Catalog</a></li>
-            <li class="navigation-item"><a href="" class="nav-link">Contact Us</a></li>
+            <li class="navigation-item"><a href="contact-us.html" class="nav-link card--active">Contact Us</a></li>
           </ul>
         </nav>
         <ul class="header-buttons">
-          <li class="search-button">
-            <button class="search" type="button">Search</button>
-          </li>
-          <li class="discord-button">
-            <a href="https://discord.com" target="_blank" class="discord">Discord</a>
-          </li>
-          <li class="connect-button">
+            <li class="search-form"><form action="#" class="search-button" method="get">
+                <input type="search" placeholder="Search" class="button button-search">
+                </form>
+            </li>
+            <li class="discord-button">
+                <a href="https://discord.com" target="_blank" class="discord">Discord</a>
+            </li>
+            <li class="connect-button">
             <button class="connect" type="button">Connect</button>
-          </li>
+            </li>
         </ul>
     </header>
-    <form action="" method="post">
-        <div>
-            <label>
-                Name
-                <input type="text" name="name">
+    <section class="banner">
+        <h2 class="banner__header">Contact us</h2>
+        <div class="banner__navigations">
+            <ul class="banner__navigation-list">
+                <li class="navigation-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="navigation-item"><a href="index.html" class="nav-link card--active">Contact us</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="location">
+            <h3 class="location__header">Location</h3>
+            <p class="location__text">2163 Phillips Gap Rd</p>
+        </div>
+        <div class="email">
+            <h3 class="email__header">Email</h3>
+            <p class="email__text">Info.avitex@gmail.com</p>
+        </div>
+        <div class="phone">
+            <h3 class="phone__header">Phone</h3>
+            <p class="phone__text">+ 1 666 8888</p>
+        </div>
+    </section>
+    <section class="contact-container">
+        <div class="get-in-touch">
+            <div class="get-in-touch__container">
+                <h2 class="get-in-touch__header">Get in touch</h2>
+                <p class="get-in-touch__text">Browse through the most frequently asked questions</p>
+            </div>
+        </div>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-switcher">
+                <span class="form-switcher__text">Use my profile information</span>
+                <input type="checkbox" class="input-hidden form-swithcher__input" id="switch">
+                <label for="switch" class="form-switcher__box"></label>
+            </div>
+            <div class="form-control">
+                <label class="form-control__label" for="name">Name</label>
+                <input id="name" class="form-control__input" minlength="5" maxlength="30" type="text" required>
+            </div>
+            <div class="form-control">
+                <label class="form-control__label" for="lastname">Last name</label>
+                <input class="form-control__input" type="text" id="lastname" minlength="5" maxlength="30" required>
+            </div>
+            <div class="form-control">
+                <label class="form-control__label" for="date-of-birth">Date of birth</label>
+                <input class="form-control__input" type="date" id="date-of-birth" required>
+            </div>
+            <div class="form-control">
+                <div class="form-control__label">Gender</div>
+                <label class="form-radio">
+                    <input class="input-hidden form-radio__input" type="radio" name="gender" value="male" checked required>
+                    <span class="form-radio__inner">
+                        <span class="form-radio__box"></span>
+                        <span class="form-radio__text">Male</span>
+                    </span>
+                </label>
+                <label class="form-radio">
+                    <input class="input-hidden form-radio__input" type="radio" name="gender" value="female">
+                    <span class="form-radio__inner">
+                        <span class="form-radio__box"></span>
+                        <span class="form-radio__text">Female</span>
+                    </span>
+                </label>
+            </div>
+            <div class="form-control">
+                <label class="form-control__label" for="email">Email</label>
+                <input class="form-control__input" type="email" id="email" required>
+            </div>
+             <div class="form-control">
+                <label class="form-control__label" for="phone">Phone Number</label>
+                <input class="form-control__input" type="tel" id="phone" required>
+            </div>
+            <div class="form-control">
+                <label class="form-control__label" for="message">Message</label>
+                <textarea class="form-control__input" name="message" id="message"></textarea>
+            </div>
+            <label class="form-checkbox">
+                <input class="input-hidden form-checkbox__input" type="checkbox" required>
+                <span class="form-checkbox__inner">
+                    <span class="form-checkbox__box"></span>
+                    <span class="form-checkbox__text">By clicking on the 'Send Message' button I agree to <a href="" target="_blank">all the terms aof the security policy</a></span>
+                </span>
             </label>
+            <button class="form-control__submit" type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="main-footer">
+          <div class="main-footer__left">
+            <img src="img/logo_blue.svg" alt="Binabox" class="main-footer__logo" width="188" height="42">
+            <p class="main-footer__text">We are the best way to check the rarity of NFT collection.</p>
+          </div>
+          <div class="main-footer__right">
+            <div class="main-footer__right__subscribe">
+              <h3 class="main-footer__right__header">Subscribe</h3>
+              <ul class="main-footer_nav-list">
+                <li class="nav-items"><a href="" class="home-link"></a>Home</li>
+                <li class="nav-items"><a href="blog-article.html" class="blog-link"></a>Blog</li> 
+                <li class="nav-items"><a href="" class="catalog-link"></a>Catalog</li>
+                <li class="nav-items"><a href="contact-us.html" class="contact-link"></a>Contact Us</li>
+              </ul>
+            </div>
+            <div class="main-footer__right__company">
+              <h3 class="main-footer__right__header">Company</h3>
+              <ul class="main-footer_nav-list">
+                <li class="nav-items"><a href="" class="tnc-link"></a>Terms and Conditions</li>
+                <li class="nav-items"><a href="" class="privacy-link"></a>Privacy Policy</li>
+                <li class="nav-items"><a href="" class="whitepaper-link"></a>Whitepaper</li>
+                <li class="nav-items"><a href="" class="help-center-link"></a>Help Center</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-            <label>
-                Last name
-                <input type="text" name="lastname">
-            </label>
+        <div class="bot-footer">
+          <div class="bot-footer__left">
+            <p class="bot-footer__text">BINABOX 2022 - ALL rights reserved</p>
+          </div>
+          <div class="bot-footer__right">
+            <ul class="social-media__list">
+              <li class="social-media__icon">
+                <a href="https://x.com" class="social-media-link">
+                  <img src="img/twitter-icon.svg" alt="Twitter" class="twitter-link" width="40" height="40">
+                </a>
+              </li>
+              <li class="social-media__icon">
+                <a href="https://facebook.com" class="social-media-link">
+                  <img src="img/facebook-icon.svg" alt="Facebook" class="facebook-link" width="40" height="40">
+                </a>
+              </li>
+              <li class="social-media__icon">
+                <a href="https://telegram.com" class="social-media-link">
+                  <img src="img/telegram-icon.svg" alt="Telegram" class="telegram-link" width="40" height="40">
+                </a>
+              </li>
+              <li class="social-media__icon">
+                <a href="https://youtube.com" class="social-media-link">
+                  <img src="img/youtube-icon.svg" alt="YouTube" class="youtube-link" width="40" height="40">
+                </a>
+                </li>
+              <li class="social-media__icon">
+                <a href="https://tiktok.com" class="social-media-link">
+                  <img src="img/ticktok-icon.svg" alt="TikTok" class="tiktok-link" width="40" height="40">
+                </a>
+              </li>
+              <li class="social-media__icon">
+                <a href="https://discord.com" class="social-media-link">
+                  <img src="img/discrord-icon.svg" alt="Discord" class="discord-media-link" width="40" height="40">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-            <label>
-                Date of birth
-                <input type="date" name="dateofbirth">
-            </label>
-        </div>
-        <div>
-            <input type="radio" name="gender" value="male" id="male-id">
-                <label for="male-id">Male</label>
-            <input type="radio" name="gender" value="female" id="female-id">
-                <label for="female-id">Female</label>
-        </div>
-        <div>
-            <label for="email-id">Email</label>
-                <input type="email" name="email" id="email-id" required>
-        </div>
-        <div>
-            <label for="tel-id">Phone number</label>
-                <input type="tel" name="telefon" id="tel-id" required>
-        </div>
-        <div>
-            <label for="textarea-id">Message</label>
-                <textarea name="message" id="textarea-id"></textarea>
-        </div>
-        <div>
-            <label for="checkbox-id">By clicking on the 'Send message' button I agree to <span> all the terms of the security policy</span></label>
-                <input type="checkbox" name="terms" id="checkbox-id">
-        </div>
-        <button type="button">Send Message</button>
-    </form>
+    </footer>
 </body>
 </html>
