@@ -3,8 +3,8 @@
     padding-top: 64px;
     gap: 64px;
     background: 
-    url(img/blog-page-banner.webp) top left / 1728px 375px no-repeat,
-    url(img/blog-page-banner-wave.webp) center / 1728px 133px no-repeat;
+    url(img/blog-page-banner-wave.webp) top left / 1728px 375px no-repeat,
+    url(img/blog-page-banner.webp) center / 1728px 133px no-repeat;
 }
 
 .blog-banner__header {
@@ -16,6 +16,7 @@
     letter-spacing: -0.5px;
     align-items: center;
     text-align: center;
+    background: 
 }
 
 .blog-banner__nav-list {
