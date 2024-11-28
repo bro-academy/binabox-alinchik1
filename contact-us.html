@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="css/contact-us.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="icon" href="img/icons/half-logo-icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,900&display=swap" rel="stylesheet">
@@ -14,8 +13,10 @@
 </head>
 <body>
     <header class="header">
-        <a href="" class="binabox">
-        <img src="img/logos.svg" alt="Binabox" class="logo" width="188" height="42">
+        <a href="https://binabox.com" class="binabox">
+          <svg class="logo" width="188" height="42">
+            <use href="/img/icons/sprite.svg#logos"></use>
+          </svg>  
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -126,71 +127,85 @@
         </form>
     </section>
     <footer class="footer">
-        <div class="main-footer">
-          <div class="main-footer__left">
-            <img src="img/logo-blue.svg" alt="Binabox" class="main-footer__logo" width="188" height="42">
-            <p class="main-footer__text">We are the best way to check the rarity of NFT collection.</p>
-          </div>
-          <div class="main-footer__right">
-            <div class="main-footer__right__subscribe">
-              <h3 class="main-footer__right__header">Subscribe</h3>
-              <ul class="main-footer_nav-list">
-                <li class="nav-items"><a href="" class="home-link"></a>Home</li>
-                <li class="nav-items"><a href="blog-article.html" class="blog-link"></a>Blog</li> 
-                <li class="nav-items"><a href="" class="catalog-link"></a>Catalog</li>
-                <li class="nav-items"><a href="contact-us.html" class="contact-link"></a>Contact Us</li>
-              </ul>
-            </div>
-            <div class="main-footer__right__company">
-              <h3 class="main-footer__right__header">Company</h3>
-              <ul class="main-footer_nav-list">
-                <li class="nav-items"><a href="" class="tnc-link"></a>Terms and Conditions</li>
-                <li class="nav-items"><a href="" class="privacy-link"></a>Privacy Policy</li>
-                <li class="nav-items"><a href="" class="whitepaper-link"></a>Whitepaper</li>
-                <li class="nav-items"><a href="" class="help-center-link"></a>Help Center</li>
-              </ul>
-            </div>
-          </div>
+      <div class="main-footer">
+        <div class="main-footer__left">
+          <svg class="binabox-logo-blue" width="188" height="42">
+              <use href="/img/icons/sprite.svg#logo-blue"></use>
+          </svg>
+          <p class="main-footer__text">We are the best way to check the rarity of NFT collection.</p>
         </div>
-        <div class="bot-footer">
-          <div class="bot-footer__left">
-            <p class="bot-footer__text">BINABOX 2022 - ALL rights reserved</p>
+        <div class="main-footer__right">
+          <div class="main-footer__right__subscribe">
+            <h3 class="main-footer__right__header">Subscribe</h3>
+            <ul class="main-footer_nav-list">
+              <li class="nav-items"><a href="" class="home-link"></a>Home</li>
+              <li class="nav-items"><a href="blog-article.html" class="blog-link"></a>Blog</li> 
+              <li class="nav-items"><a href="" class="catalog-link"></a>Catalog</li>
+              <li class="nav-items"><a href="contact-us.html" class="contact-link"></a>Contact Us</li>
+            </ul>
           </div>
-          <div class="bot-footer__right">
-            <ul class="social-media__list">
-              <li class="social-media__icon">
-                <a href="https://x.com" class="social-media-link">
-                  <img src="img/twitter-icon.svg" alt="Twitter" class="twitter-link" width="40" height="40">
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a href="https://facebook.com" class="social-media-link">
-                  <img src="img/facebook-icon.svg" alt="Facebook" class="facebook-link" width="40" height="40">
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a href="https://telegram.com" class="social-media-link">
-                  <img src="img/telegram-icon.svg" alt="Telegram" class="telegram-link" width="40" height="40">
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a href="https://youtube.com" class="social-media-link">
-                  <img src="img/youtube-icon.svg" alt="YouTube" class="youtube-link" width="40" height="40">
-                </a>
-                </li>
-              <li class="social-media__icon">
-                <a href="https://tiktok.com" class="social-media-link">
-                  <img src="img/ticktok-icon.svg" alt="TikTok" class="tiktok-link" width="40" height="40">
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a href="https://discord.com" class="social-media-link">
-                  <img src="img/discrord-icon.svg" alt="Discord" class="discord-media-link" width="40" height="40">
-                </a>
-              </li>
+          <div class="main-footer__right__company">
+            <h3 class="main-footer__right__header">Company</h3>
+            <ul class="main-footer_nav-list">
+              <li class="nav-items"><a href="" class="tnc-link"></a>Terms and Conditions</li>
+              <li class="nav-items"><a href="" class="privacy-link"></a>Privacy Policy</li>
+              <li class="nav-items"><a href="" class="whitepaper-link"></a>Whitepaper</li>
+              <li class="nav-items"><a href="" class="help-center-link"></a>Help Center</li>
             </ul>
           </div>
         </div>
-    </footer>
+      </div>
+      <div class="bot-footer">
+        <div class="bot-footer__left">
+          <p class="bot-footer__text">BINABOX 2022 - ALL rights reserved</p>
+        </div>
+        <div class="bot-footer__right">
+          <ul class="social-media__list">
+            <li class="social-media__icon">
+              <a href="https://x.com" class="social-media-link">
+                  <svg class="twitter-link" width="40" height="40">
+                      <use href="/img/icons/sprite.svg#twitter-icon"></use>
+                  </svg>               
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a href="https://facebook.com" class="social-media-link">
+                  <svg class="facebook-link" width="40" height="40">
+                      <use href="/img/icons/sprite.svg#facebook-icon"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a href="https://telegram.com" class="social-media-link">
+                  <svg class="telegram-link" width="40" height="40">
+                      <use href="/img/icons/sprite.svg#telegram-icon"></use>
+                  </svg>   
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a href="https://youtube.com" class="social-media-link">
+                  <svg class="youtube-link" width="40" height="40">
+                      <use href="/img/icons/sprite.svg#youtube-icon"></use>
+                  </svg>   
+              </a>
+              </li>
+            <li class="social-media__icon">
+              <a href="https://tiktok.com" class="social-media-link">
+                  <svg class="tiktok-link" width="40" height="40">
+                      <use href="/img/icons/sprite.svg#tik-tok-icon"></use>
+                  </svg>            
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a href="https://discord.com" class="social-media-link">
+                  <svg class="discord-media-link" width="40" height="40">
+                      <use href="/img/icons/sprite.svg#discord-icon"></use>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </footer>
 </body>
 </html>
