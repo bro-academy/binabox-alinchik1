@@ -10,7 +10,7 @@
   width: 1,728px;
   gap: 32px;
   background: 
-    url(img/big-cube.webp) center right / 576px 576px no-repeat,
+    url(/img/big-cube.webp) center right / 576px 576px no-repeat,
     linear-gradient(
     165deg,
     rgba(2, 101, 220, 0.5) 0%,
@@ -300,9 +300,12 @@
   width: 1728px;
   padding: 64px;
   gap: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+}
+.our-blog-container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .section-name {
@@ -322,14 +325,11 @@
   padding: 24px;
   background-color: #1D1C28;
   box-sizing: border-box;
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
 
 }
 .grid-row-span {
   grid-row: span 2;
+}
 
 .sonic-live-small {
   width: 784px;
@@ -338,14 +338,10 @@
   gap: 10px;
   background-color: #1D1C28;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  position: relative;
 }
 
 .big-face-image, small-face-image {
   width: 100%;
-  margin-bottom: 0px;
   background-color: #0265DC;
 }
 
@@ -369,13 +365,11 @@
 .big-face-image {
   width: 736px;
   height: 640px;
-  display: block;
 }
 
 .small-face-image {
   width: 736px;
   height: 174px;
-  display: block;
 }
 
 .article-content-block {
@@ -386,7 +380,6 @@
 .metadata {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 8px;
   font-size: 14px;
 }
@@ -404,14 +397,12 @@
   background-image: url(/img/icons/user-icon.svg);
   background-repeat: no-repeat;
   background-position: left;
-  margin-top: -10px;
 }
 
 .time {
   background-image: url(/img/icons/calendar-icon.svg);
   background-repeat: no-repeat;
   background-position: left;
-  margin-top: -22px;
 }
 
 .article-name {
@@ -421,7 +412,6 @@
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  margin-top: -10px;
 }
 
 .article-content {
@@ -429,7 +419,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-top: -60px;
 }
 
 .read-more {
