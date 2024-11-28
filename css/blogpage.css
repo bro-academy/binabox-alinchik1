@@ -1,10 +1,12 @@
 .blog-banner {
     width: 1728px;
+    height: 374px;
     padding-top: 64px;
     gap: 64px;
     background: 
-    url(img/blog-page-banner-wave.webp) top left / 1728px 375px no-repeat,
-    url(img/blog-page-banner.webp) center / 1728px 133px no-repeat;
+    url(/img/blog-page-banner-wave.webp) bottom / 1728px 134px no-repeat,
+    url(/img/blog-page-banner.webp) top / 1728px 375px no-repeat;
+    background-color: #1A1925;
 }
 
 .blog-banner__header {
@@ -16,7 +18,6 @@
     letter-spacing: -0.5px;
     align-items: center;
     text-align: center;
-    background: 
 }
 
 .blog-banner__nav-list {
@@ -140,13 +141,13 @@
   }
   
   .metadata__artist-name {
-    background-image: url(img/user-icon.svg);
+    background-image: url(/img/icons/user-icon.svg);
     background-repeat: no-repeat;
     background-position: left;
   }
 
   .metadata__time {
-    background-image: url(img/calendar-icon.svg);
+    background-image: url(/img/icons/calendar-icon.svg);
     background-repeat: no-repeat;
     background-position: left;
   }
@@ -174,7 +175,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    background-image: url(img/half-logo-icon.svg);
+    background-image: url(/img/icons/half-logo-icon.svg);
     background-repeat: no-repeat;
     background-position: left;
     white-space: nowrap;
@@ -202,7 +203,7 @@
     width: 888px;
     gap: 8px;
     padding-left: 40px;
-    background-image: url(img/rating-stars-icon.svg);
+    background-image: url(/img/icons/rating-stars-icon.svg);
     background-repeat: no-repeat;
     background-position: left;
 }
