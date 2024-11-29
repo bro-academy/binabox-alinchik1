@@ -61,7 +61,7 @@ body {
     height: 48px;
   }
   
-  .search {
+  .button-search {
     width: 188px;
     height: 48px;
     border: 2px solid rgba(208, 215, 251, 0.17);
@@ -72,9 +72,10 @@ body {
     line-height: 20px;
     gap: 8px;  
     background-image: 
-     url(img/search.svg);
+     url(/img/icons/search.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
+    padding-left: 35px;
   }
   
   .search-button {
@@ -84,7 +85,7 @@ body {
   }
   
   .search-button::after {
-    content: url(img/vertical-separator.svg);
+    content: url(/img/icons/vertical-separator.svg);
     display: inline-block;
     width: 2px;
     height: 24px;
@@ -108,7 +109,7 @@ body {
     gap: 8px;
     color: #F5F8FB;
     background-image: 
-    url(img/discrord-icon.svg);
+    url(/img/icons/discrord-icon.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
   }
@@ -128,7 +129,7 @@ body {
     text-decoration: none;
     color: #F5F8FB;
     background-image: 
-    url(img/connect-icon.svg);
+    url(/img/icons/connect-icon.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
   }
@@ -175,7 +176,6 @@ body {
   
   .main-footer__right__header {
     width: 101px;
-    font-family:'Poppins', Arial, sans-serif; 
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -209,7 +209,6 @@ body {
   }
   
   .bot-footer__text {
-    font-family:'Poppins', Arial, sans-serif; 
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;

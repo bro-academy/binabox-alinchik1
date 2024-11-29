@@ -1,0 +1,256 @@
+.banner {
+  width: 1728px;
+  padding-top: 64px;
+  gap: 64px;
+}
+
+.banner__header {
+  width: 1728px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+}
+
+.banner__navigations {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-container {
+  width: 1728px;
+  padding: 64px 64px 104px 64px;
+  gap: 40px;
+}
+
+.get-in-touch {
+  width: 1600px;
+  gap: 8px;
+}
+
+.get-in-touch__header {
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 400px;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.get-in-touch__text {
+  text-align: center;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.contact-form {
+  width: 640px;
+  max-width: 640px;
+  row-gap: 24px;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.input-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: 0;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column; 
+  row-gap: 4px;
+  margin-bottom: 24px;
+}
+
+.form-control__label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #F5F8FB;
+  align-self: flex-start;
+}
+
+.form-control__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 10px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid rgba(208, 215, 251, 0.17);
+  color: #F5F8FB;
+}
+
+.form-control__input:hover {
+  border-color: blue;
+}
+
+.form-control__input:user-invalid {
+  border-color: red;
+}
+
+.form-control__input:valid:focus {
+  border-color: green;
+}
+
+input:invalid:(:focus) {
+  border-color: red;
+}
+
+textarea.form-control__input {
+  width: 640px;
+  height: 160px;
+  resize: none;
+}
+
+.form-radio {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+
+.form-radio:has(.form-radio__input:disabled) {
+  cursor: default;
+}
+
+.form-radio:hover .form-radio__box {
+  background-color: blue;
+}
+
+.radio-label::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  background-color: black;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.radio-input:checked + .radio-label::before {
+  border: 6px solid blue;
+}
+
+.form-radio__inner {
+  display: grid;
+  align-items: start;
+  align-content: center;
+  column-gap: 4px;
+  grid-template-columns: 24px 1fr;
+}
+
+.form-radio__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.form-radio__box {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #E7EEF7A8;
+  position: relative;
+}
+
+.form-radio__box::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0D0D15;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
+.form-control__input:checked + .form-checkbox__inner .form-checkbox__box::after {
+  background-color: #0D0D15;
+}
+
+
+
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.form-switcher__box span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.form-switcher__box {
+  display: inline-block;
+  background: #4d4040;
+  width: 40px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.form-switcher__input:checked + .form-switcher__box span {
+  transform: translateX(35px);
+}
+
+.form-switcher__input:checked + .form-switcher__box {
+  background-color: blue;
+}
+
+
+
+
+
+.form-switcher {
+  padding: 24px;
+  display: flex;
+  background-color: ;
+  justify-content: space-between;
+}
+
+
+
+.form-checkbox {
+cursor: pointer;
+}
+
+.form-checkbox__inner {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 9px;
+  row-gap: ;
+}
+
+.form-checkbox__box {
+  display: inline-block;
+  width: 14px;
+}
+
