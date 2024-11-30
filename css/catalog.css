@@ -1,0 +1,58 @@
+.banner {
+    width: 1728px;
+    height: 374px;
+    padding-top: 64px;
+    gap: 64px;
+    background: 
+    url(/img/blog-page-banner-wave.webp) bottom / 1728px 134px no-repeat,
+    url(/img/blog-page-banner.webp) top / 1728px 375px no-repeat;
+    background-color: #1A1925;
+}
+
+.banner__header {
+    width: 1600px;
+    font-family: 'Bakbar One', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.banner__navigation {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  
+.card--nonactive {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    align-self: center;
+    text-align: center;
+    color: rgba(231, 238, 247, 0.66);
+    gap: 8px;
+    width: 67px;
+    padding: 6px 12px;
+    gap: 8px;
+}
+  
+
+
+.catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 24px;
+}
+
+.catalog__main-section {
+    display: flex;
+}
