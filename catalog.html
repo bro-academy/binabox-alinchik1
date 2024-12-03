@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>Catalog</title>
 </head>
 <body class="body">
   <header class="header">
@@ -42,7 +42,7 @@
   </header>
   <main class="content">
     <div class="banner">
-        <h2 class="banner__header">Explore catalog</h2>
+        <h1 class="banner__header">Explore catalog</h1>
         <ul class="banner__navigation">
             <li class="banner__nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="banner__nav-item"><a href="" class="nav-link card--nonactive">Catalog</a></li>
@@ -50,44 +50,56 @@
     </div>
     <section class="catalog__main-section">
         <form action="" method="post" class="left-block-filters">
-            <div class="clothing">
-                <h3 class="clothing__header">Clothing</h3>
-                <div class="clothing__options">
-                    <label class="options"><input type="checkbox" name="clothing" value="combatant">Combatant</label>
-                    <label class="options"><input type="checkbox" name="clothing" value="ninja">Ninja</label>
-                    <label class="options"><input type="checkbox" name="clothing" value="king">King</label>
-                    <label class="options"><input type="checkbox" name="clothing" value="queen">Queen</label>
-                    <label class="options"><input type="checkbox" name="clothing" value="robot">Robot</label>
+          <fieldset>
+            <div class="category">
+                <h3 class="category__header">Clothing</h3>
+                <div class="category__options">
+                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="combatant">Combatant</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="ninja">Ninja</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="king">King</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="queen">Queen</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="robot">Robot</label>
                 </div>
             </div>
-            <div class="eyes">
-                <h3 class="eyes__header">Eyes</h3>
-                <div class="eyes__options">
-                    <label class="options"><input type="radio" name="eyes" value="yellow">Yellow</label>
-                    <label class="options"><input type="radio" name="eyes" value="green">Green</label>
-                    <label class="options"><input type="radio" name="eyes" value="mix">Mix</label>
-                    <label class="options"><input type="radio" name="eyes" value="orange">Orange</label>
+          </fieldset>
+          <fieldset>
+            <div class="category">
+                <h3 class="category__header">Eyes</h3>
+                <div class="category__options">
+                    <label class="options"><input class="radio" type="radio" name="eyes" value="yellow">Yellow</label>
+                    <label class="options"><input class="radio" type="radio" name="eyes" value="green">Green</label>
+                    <label class="options"><input class="radio" type="radio" name="eyes" value="mix">Mix</label>
+                    <label class="options"><input class="radio" type="radio" name="eyes" value="orange">Orange</label>
                 </div>
             </div>
-            <div class="face">
-                <h3 class="face__header">Face</h3>
+          </fieldset>
+          <fieldset>
+            <div class="category">
+                <h3 class="category__header">Face</h3>
             </div>
-            <div class="skin">
-                <h3 class="skin__header">Skin</h3>
+          </fieldset>
+          <fieldset>
+            <div class="category">
+                <h3 class="category__header">Skin</h3>
             </div>
-            <div class="background">
-                <h3 class="background__header">Background</h3>
+          </fieldset>
+          <fieldset>
+            <div class="category">
+                <h3 class="category__header">Background</h3>
             </div>
-            <div class="special">
-                <h3 class="special__header">Special</h3>
-                <div class="special__options">
-                    <label class="options"><input type="checkbox" name="special" value="yellow">Yellow</label>
-                    <label class="options"><input type="checkbox" name="special" value="green">Green</label>
-                    <label class="options"><input type="checkbox" name="special" value="mix">Mix</label>
-                    <label class="options"><input type="checkbox" name="special" value="orange">Orange</label>
+          </fieldset>
+          <fieldset>
+            <div class="category">
+                <h3 class="category__header">Special</h3>
+                <div class="category__options">
+                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="yellow">Yellow</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="green">Green</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="mix">Mix</label>
+                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="orange">Orange</label>
                 </div>
             </div>
-            <button class="apply-button" type="button">Apply</button>
+          </fieldset>
+            <button class="apply-button" type="submit">Apply</button>
         </form>
         <div class="product-listing">
             <div class="all-items">
@@ -253,9 +265,9 @@
             </li>
           <li class="social-media__icon">
             <a href="https://tiktok.com" class="social-media-link">
-                <svg class="tiktok-link" width="40" height="40">
-                    <use href="/img/icons/sprite.svg#tik-tok-icon"></use>
-                </svg>            
+              <svg class="tiktok-link" width="40" height="40">
+                  <use href="/img/icons/sprite.svg#tik-tok-icon"></use>
+              </svg>            
             </a>
           </li>
           <li class="social-media__icon">
