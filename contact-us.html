@@ -91,19 +91,13 @@
             <div class="form-control">
                 <div class="form-control__label">Gender</div>
                 <label class="form-radio">
-                    <input class="input-hidden form-radio__input" type="radio" name="gender" value="male" checked required>
-                    <span class="form-radio__inner">
-                        <span class="form-radio__box"></span>
-                        <span class="form-radio__text">Male</span>
-                    </span>
+                    <input class="radio visually-hidden" type="radio" name="gender" value="male" checked required>
+                    <span class="radio-input"></span>Male
                 </label>
                 <label class="form-radio">
-                    <input class="input-hidden form-radio__input" type="radio" name="gender" value="female">
-                    <span class="form-radio__inner">
-                        <span class="form-radio__box"></span>
-                        <span class="form-radio__text">Female</span>
-                    </span>
-                </label>
+                  <input class="radio visually-hidden" type="radio" name="gender" value="female" checked>
+                  <span class="radio-input"></span>Female
+              </label>
             </div>
             <div class="form-control">
                 <label class="form-control__label" for="email">Email</label>
@@ -118,11 +112,8 @@
                 <textarea class="form-control__input" name="message" id="message"></textarea>
             </div>
             <label class="form-checkbox">
-                <input class="input-hidden form-checkbox__input" type="checkbox" required>
-                <span class="form-checkbox__inner">
-                    <span class="form-checkbox__box"></span>
-                    <span class="form-checkbox__text">By clicking on the 'Send Message' button I agree to <a href="" target="_blank">all the terms aof the security policy</a></span>
-                </span>
+                <input class="checkbox visually-hidden" type="checkbox" required>
+                <span class="checkbox-input"></span>By clicking on the 'Send Message' button I agree to <a href="" target="_blank">all the terms aof the security policy</a>
             </label>
             <button class="form-control__submit" type="submit">Send Message</button>
         </form>

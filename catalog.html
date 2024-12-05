@@ -50,53 +50,80 @@
     </div>
     <section class="catalog__main-section">
         <form action="" method="post" class="left-block-filters">
-          <fieldset>
-            <div class="category">
-                <h3 class="category__header">Clothing</h3>
-                <div class="category__options">
-                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="combatant">Combatant</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="ninja">Ninja</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="king">King</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="queen">Queen</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="clothing" value="robot">Robot</label>
-                </div>
+          <fieldset class="category">
+            <legend class="category__header">Clothing</legend>
+            <div class="category__options">
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="combatant">
+                <span class="checkbox-input"></span>Combatant
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="ninja">
+                <span class="checkbox-input"></span>Ninja
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="king">
+                <span class="checkbox-input"></span>King
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="queen">
+                <span class="checkbox-input"></span>Queen
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="robot">
+                <span class="checkbox-input"></span>Robot
+              </label>
             </div>
           </fieldset>
-          <fieldset>
-            <div class="category">
-                <h3 class="category__header">Eyes</h3>
-                <div class="category__options">
-                    <label class="options"><input class="radio" type="radio" name="eyes" value="yellow">Yellow</label>
-                    <label class="options"><input class="radio" type="radio" name="eyes" value="green">Green</label>
-                    <label class="options"><input class="radio" type="radio" name="eyes" value="mix">Mix</label>
-                    <label class="options"><input class="radio" type="radio" name="eyes" value="orange">Orange</label>
-                </div>
+          <fieldset class="category">
+            <legend class="category__header">Eyes</legend>
+            <div class="category__options">
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="yellow">
+                <span class="radio-input"></span>Yellow
+              </label>
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="green">
+                <span class="radio-input"></span>Green
+              </label>
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="mix">
+                <span class="radio-input"></span>Mix
+              </label>
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="orange">
+                <span class="radio-input"></span>Orange
+              </label>
             </div>
           </fieldset>
-          <fieldset>
-            <div class="category">
-                <h3 class="category__header">Face</h3>
-            </div>
+          <fieldset class="caterogy">
+            <legend class="category__header">Face</legend>
           </fieldset>
-          <fieldset>
-            <div class="category">
-                <h3 class="category__header">Skin</h3>
-            </div>
+          <fieldset class="category">
+            <legend class="category__header">Skin<legend>
           </fieldset>
-          <fieldset>
-            <div class="category">
-                <h3 class="category__header">Background</h3>
-            </div>
+          <fieldset class="category">
+            <legend class="category__header">Background</legend>
           </fieldset>
-          <fieldset>
-            <div class="category">
-                <h3 class="category__header">Special</h3>
-                <div class="category__options">
-                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="yellow">Yellow</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="green">Green</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="mix">Mix</label>
-                    <label class="options"><input class="checkbox" type="checkbox" name="special" value="orange">Orange</label>
-                </div>
+          <fieldset class="category">
+            <legend class="category__header">Special</legend>
+            <div class="category__options">
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="yellow">
+                <span class="checkbox-input"></span>Yellow
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="green">
+                <span class="checkbox-input"></span>Green
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="mix">
+                <span class="checkbox-input"></span>Mix
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="orange">
+                <span class="checkbox-input"></span>Orange
+              </label>
             </div>
           </fieldset>
             <button class="apply-button" type="submit">Apply</button>
@@ -108,10 +135,10 @@
                     <div class="sort-options">
                         <label for="sort">Sort by</label>
                         <select id="sort">
-                            <option value="newest">Newest</option>
-                            <option value="popular">Most popular</option>
-                            <option value="price_inc">Increasing in price</option>
-                            <option value="price_low">Lowering in price</option>
+                            <option class="sort-item" value="newest">Newest</option>
+                            <option class="sort-item" value="popular">Most popular</option>
+                            <option class="sort-item" value="price_inc">Increasing in price</option>
+                            <option class="sort-item" value="price_low">Lowering in price</option>
                         </select>
                     </div>
                     <div class="search-button">

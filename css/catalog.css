@@ -1,6 +1,6 @@
 .banner {
     width: 1728px;
-    height: 374px;
+    min-height: 374px;
     padding-top: 64px;
     gap: 64px;
     background: 
@@ -47,8 +47,6 @@
     width: 320px;
     padding: 24px;
     gap: 16px;
-    background-color: #1D1C28;
-    box-sizing: border-box;
 }
 
 .category__header {
@@ -69,12 +67,9 @@
     flex-direction: column;
 }
 
-.checkbox {
-    appearance: none;
+.checkbox-input {
     background-color: #0D0D15;
     border-radius: 4px;
-    position: absolute;
-    cursor: pointer;
     width: 14px;
     height: 14px;
     border: 2px solid rgba(212, 217, 242, 0.26);
@@ -82,14 +77,28 @@
     display: inline-block;
     margin-right: 10px;
     transition: background .3s;
+    cursor: pointer;
 }
 
-.checkbox:checked {
+.checkbox-input::before {
+    content: '';
+    background-size: cover;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+}
+
+.checkbox:checked ~ .checkbox-input {
+    background: url(/img/icons/checkbox-mark.svg) center / 8px 6px no-repeat;
+    border-color: #3892F3;
     background-color: #0265DC;
-    border-color: #0265DC;
 }
 
-.checkbox:checked:after {
+.checkbox:invalid ~ .checkbox-input {
+    border-color: #EA3829;
+}
+
+.checkbox:checked::after {
     content: '';
     color: white;
     top: 50%;
@@ -101,21 +110,19 @@
     position: relative;
 }
 
-.radio {
-    appearance: none;
+.radio-input {
     background-color: #0D0D15;
     border: 2px solid rgba(212, 217, 242, 0.26);
-    border-radius: 50%;
     position: absolute;
     cursor: pointer;
     width: 14px;
     height: 14px;
-    position: absolute;
+    border-radius: 50%;
 }
 
-.radio:checked {
-    background-color: #0265DC;
-    border-color: #0265DC;
+.radio:checked ~ .radio-input {
+    border: 7px solid blue;
+    box-sizing: border-box;
 }
 
 .radio:checked::after {
@@ -127,11 +134,10 @@
     width: 10px;
     height: 10px;
     background-color: white;
-    border-radius: 50%;
 }
 
 fieldset {
-    border: none;
+    background-color: #1D1C28;
 }
 
 .apply-button {
@@ -167,6 +173,18 @@ fieldset {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
+}
+
+.sort-options {
+    width: 160px;
+    height: 32px;
+    padding: 6px 12px;
+    gap: 8px;
+    border: 2px solid rgba(208, 215, 251, 0.17);
+    color: #F5F8FB;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .sorting-search {
