@@ -120,8 +120,12 @@
     border-radius: 50%;
 }
 
+.radio__text {
+    margin-left: 20px;
+}
+
 .radio:checked ~ .radio-input {
-    border: 7px solid blue;
+    border: 5px solid blue;
     box-sizing: border-box;
 }
 

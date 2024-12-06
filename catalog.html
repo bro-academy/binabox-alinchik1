@@ -28,9 +28,12 @@
       </ul>
     </nav>
     <ul class="header-buttons">
-      <li class="search-form"><form action="" class="search-button" method="get">
-        <input type="search" placeholder="Search" class="button button-search">
-        </form>
+      <li class="search-form">
+        <search>
+          <form action="" class="search-button" method="get">
+            <input type="search" placeholder="Search" class="button button-search">
+          </form>
+        </search>
       </li>
       <li class="discord-button">
         <a href="https://discord.com" target="_blank" class="discord">Discord</a>
@@ -80,19 +83,23 @@
             <div class="category__options">
               <label class="options">
                 <input class="radio visually-hidden" type="radio" name="eyes" value="yellow">
-                <span class="radio-input"></span>Yellow
+                <span class="radio-input"></span>
+                <span class="radio__text">Yellow</span>
               </label>
               <label class="options">
                 <input class="radio visually-hidden" type="radio" name="eyes" value="green">
-                <span class="radio-input"></span>Green
+                <span class="radio-input"></span>
+                <span class="radio__text">Green</span>
               </label>
               <label class="options">
                 <input class="radio visually-hidden" type="radio" name="eyes" value="mix">
-                <span class="radio-input"></span>Mix
+                <span class="radio-input"></span>
+                <span class="radio__text">Mix</span>
               </label>
               <label class="options">
                 <input class="radio visually-hidden" type="radio" name="eyes" value="orange">
-                <span class="radio-input"></span>Orange
+                <span class="radio-input"></span>
+                <span class="radio__text">Orange</span>
               </label>
             </div>
           </fieldset>
@@ -141,9 +148,11 @@
                             <option class="sort-item" value="price_low">Lowering in price</option>
                         </select>
                     </div>
-                    <div class="search-button">
+                    <search>
+                      <form action="" class="search-button">
                         <input type="search" placeholder="Search NFT" class="button button-search">
-                    </div>
+                      </form>
+                    </search>
                 </form>
             </div>
             <div class="product-items">
