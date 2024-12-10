@@ -83,6 +83,10 @@ body {
     align-items: center;
     gap: 10px;
   }
+
+  .button-search:hover {
+    border: 2px solid blue;
+  }
   
   .search-button::after {
     content: url(/img/icons/vertical-separator.svg);
@@ -109,7 +113,7 @@ body {
     gap: 8px;
     color: #F5F8FB;
     background-image: 
-    url(/img/icons/discrord-icon.svg);
+    url(/img/icons/discord-icon.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
   }

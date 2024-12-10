@@ -80,6 +80,11 @@
     cursor: pointer;
 }
 
+.checkbox-input:hover {
+    background-color: rgba(191, 197, 238, 0.12);
+    border: 2px solid rgba(231, 241, 253, 0.49);
+}
+
 .checkbox-input::before {
     content: '';
     background-size: cover;
@@ -120,6 +125,12 @@
     border-radius: 50%;
 }
 
+.radio-input:hover {
+    background-color: rgba(191, 197, 238, 0.12);
+    border: 2px solid rgba(231, 241, 253, 0.49);
+    box-sizing: border-box;
+}
+
 .radio__text {
     margin-left: 20px;
 }
@@ -157,6 +168,10 @@ fieldset {
     margin: 20px;
 }
 
+.apply-button:hover {
+    transform: scale(1.1);
+}
+
 .product-listing {
     width: 1024px;
     min-width: 328px;
@@ -180,15 +195,34 @@ fieldset {
 }
 
 .sort-options {
-    width: 160px;
+    display: grid;
+    row-gap: 8px;
+    box-sizing: border-box;
+}
+
+.sort-options select {
+    width: 180px;
     height: 32px;
     padding: 6px 12px;
     gap: 8px;
     border: 2px solid rgba(208, 215, 251, 0.17);
+    background-color: transparent;
     color: #F5F8FB;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+}
+
+.sort-options option {
+    background-color: #1D1C28;
+}
+
+.sort-options select:hover {
+    border: 4px solid rgba(56, 146, 243, 1);
+}
+
+.sort-options select:focus {
+    border: 2px solid rgba(2, 101, 220, 1);
 }
 
 .sorting-search {
