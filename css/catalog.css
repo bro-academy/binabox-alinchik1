@@ -99,6 +99,11 @@
     background-color: #0265DC;
 }
 
+.checkbox:focus ~ .checkbox-input {
+    background-color: rgba(191, 197, 238, 0.12);
+    border: 2px solid rgba(56, 146, 243, 1);
+}
+
 .checkbox:invalid ~ .checkbox-input {
     border-color: #EA3829;
 }
@@ -138,6 +143,12 @@
 .radio:checked ~ .radio-input {
     border: 5px solid blue;
     box-sizing: border-box;
+}
+
+.radio:focus ~ .radio-input {
+    background-color: rgba(231, 241, 253, 0.49);
+    border: 2px solid rgba(42, 53, 63, 0.7);
+    border: 5px solid blue;
 }
 
 .radio:checked::after {
