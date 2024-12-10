@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="css/contact-us.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="/img/icons/half-logo-icon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact-us</title>
 </head>
 <body>
     <header class="header">
@@ -22,14 +23,17 @@
           <ul class="navigation-list">
             <li class="navigation-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="navigation-item"><a href="blog-article.html" class="nav-link">Blog</a></li>
-            <li class="navigation-item"><a href="" class="nav-link">Catalog</a></li>
+            <li class="navigation-item"><a href="catalog.html" class="nav-link">Catalog</a></li>
             <li class="navigation-item"><a href="contact-us.html" class="nav-link card--active">Contact Us</a></li>
           </ul>
         </nav>
         <ul class="header-buttons">
-            <li class="search-form"><form action="#" class="search-button" method="get">
-                <input type="search" placeholder="Search" class="button button-search">
+            <li class="search-form">
+              <search>
+                <form action="#" class="search-button" method="get">
+                  <input type="search" placeholder="Search" class="button button-search">
                 </form>
+              </search>
             </li>
             <li class="discord-button">
                 <a href="https://discord.com" target="_blank" class="discord">Discord</a>
@@ -43,8 +47,8 @@
         <h2 class="banner__header">Contact us</h2>
         <div class="banner__navigations">
             <ul class="banner__navigation-list">
-                <li class="navigation-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="navigation-item"><a href="index.html" class="nav-link card--active">Contact us</a></li>
+                <li class="navigation-item-home"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="navigation-item"><a href="" class="nav-link card--nonactive">Contact us</a></li>
             </ul>
         </div>
     </section>
@@ -72,12 +76,14 @@
         <form action="#" method="post" class="contact-form">
             <div class="form-switcher">
                 <span class="form-switcher__text">Use my profile information</span>
-                <input type="checkbox" class="input-hidden form-swithcher__input" id="switch">
+                <input type="checkbox" class="visually-hidden form-switcher__input" id="switch">
                 <label for="switch" class="form-switcher__box"></label>
             </div>
             <div class="form-control">
                 <label class="form-control__label" for="name">Name</label>
                 <input id="name" class="form-control__input" minlength="2" maxlength="30" type="text" required>
+                <span class="form-control__valid-text">Field validation is successful</span>
+                <span class="form-control__invalid-text">This field is required</span>
             </div>
             <div class="form-control">
                 <label class="form-control__label" for="lastname">Last name</label>
@@ -90,19 +96,15 @@
             <div class="form-control">
                 <div class="form-control__label">Gender</div>
                 <label class="form-radio">
-                    <input class="input-hidden form-radio__input" type="radio" name="gender" value="male" checked required>
-                    <span class="form-radio__inner">
-                        <span class="form-radio__box"></span>
-                        <span class="form-radio__text">Male</span>
-                    </span>
+                    <input class="radio visually-hidden" type="radio" name="gender" value="male" checked required>
+                    <span class="radio-input"></span>
+                    <span class="radio__text">Male</span>
                 </label>
                 <label class="form-radio">
-                    <input class="input-hidden form-radio__input" type="radio" name="gender" value="female">
-                    <span class="form-radio__inner">
-                        <span class="form-radio__box"></span>
-                        <span class="form-radio__text">Female</span>
-                    </span>
-                </label>
+                  <input class="radio visually-hidden" type="radio" name="gender" value="female" checked>
+                  <span class="radio-input"></span>
+                  <span class="radio__text">Female</span>
+              </label>
             </div>
             <div class="form-control">
                 <label class="form-control__label" for="email">Email</label>
@@ -117,11 +119,8 @@
                 <textarea class="form-control__input" name="message" id="message"></textarea>
             </div>
             <label class="form-checkbox">
-                <input class="input-hidden form-checkbox__input" type="checkbox" required>
-                <span class="form-checkbox__inner">
-                    <span class="form-checkbox__box"></span>
-                    <span class="form-checkbox__text">By clicking on the 'Send Message' button I agree to <a href="" target="_blank">all the terms aof the security policy</a></span>
-                </span>
+                <input class="checkbox visually-hidden" type="checkbox" required>
+                <span class="checkbox-input"></span>By clicking on the 'Send Message' button I agree to <a href="" target="_blank">all the terms aof the security policy</a>
             </label>
             <button class="form-control__submit" type="submit">Send Message</button>
         </form>

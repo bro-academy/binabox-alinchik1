@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="icon" href="/img/icons/half-logo-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+</head>
+<body class="body">
+  <header class="header">
+    <a href="https://binabox.com" class="binabox">
+      <svg class="logo" width="188" height="42">
+          <use href="/img/icons/sprite.svg#logos"></use>
+      </svg>  
+    </a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="navigation-item"><a href="blog-article.html" class="nav-link">Blog</a></li>
+        <li class="navigation-item"><a href="catalog.html" class="nav-link card--active">Catalog</a></li>
+        <li class="navigation-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <ul class="header-buttons">
+      <li class="search-form">
+        <search>
+          <form action="" class="search-button" method="get">
+            <input type="search" placeholder="Search" class="button button-search">
+          </form>
+        </search>
+      </li>
+      <li class="discord-button">
+        <a href="https://discord.com" target="_blank" class="discord">Discord</a>
+      </li>
+      <li class="connect-button">
+        <button class="connect" type="button">Connect</button>
+      </li>
+    </ul>
+  </header>
+  <main class="content">
+    <div class="banner">
+        <h1 class="banner__header">Explore catalog</h1>
+        <ul class="banner__navigation">
+            <li class="banner__nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="banner__nav-item"><a href="" class="nav-link card--nonactive">Catalog</a></li>
+        </ul>
+    </div>
+    <section class="catalog__main-section">
+        <form action="" method="post" class="left-block-filters">
+          <fieldset class="category">
+            <legend class="category__header">Clothing</legend>
+            <div class="category__options">
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="combatant">
+                <span class="checkbox-input"></span>Combatant
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="ninja">
+                <span class="checkbox-input"></span>Ninja
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="king">
+                <span class="checkbox-input"></span>King
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="queen">
+                <span class="checkbox-input"></span>Queen
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="clothing" value="robot">
+                <span class="checkbox-input"></span>Robot
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="category">
+            <legend class="category__header">Eyes</legend>
+            <div class="category__options">
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="yellow">
+                <span class="radio-input"></span>
+                <span class="radio__text">Yellow</span>
+              </label>
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="green">
+                <span class="radio-input"></span>
+                <span class="radio__text">Green</span>
+              </label>
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="mix">
+                <span class="radio-input"></span>
+                <span class="radio__text">Mix</span>
+              </label>
+              <label class="options">
+                <input class="radio visually-hidden" type="radio" name="eyes" value="orange">
+                <span class="radio-input"></span>
+                <span class="radio__text">Orange</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="caterogy">
+            <legend class="category__header">Face</legend>
+          </fieldset>
+          <fieldset class="category">
+            <legend class="category__header">Skin<legend>
+          </fieldset>
+          <fieldset class="category">
+            <legend class="category__header">Background</legend>
+          </fieldset>
+          <fieldset class="category">
+            <legend class="category__header">Special</legend>
+            <div class="category__options">
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="yellow">
+                <span class="checkbox-input"></span>Yellow
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="green">
+                <span class="checkbox-input"></span>Green
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="mix">
+                <span class="checkbox-input"></span>Mix
+              </label>
+              <label class="options">
+                <input class="checkbox visually-hidden" type="checkbox" name="special" value="orange">
+                <span class="checkbox-input"></span>Orange
+              </label>
+            </div>
+          </fieldset>
+            <button class="apply-button" type="submit">Apply</button>
+        </form>
+        <div class="product-listing">
+            <div class="all-items">
+                <h3 class="product-search__header">All item</h3>
+                <form action="" method="get" class="sorting-search">
+                    <div class="sort-options">
+                        <label for="sort">Sort by</label>
+                        <select id="sort">
+                            <option class="sort-item" value="newest">Newest</option>
+                            <option class="sort-item" value="popular">Most popular</option>
+                            <option class="sort-item" value="price_inc">Increasing in price</option>
+                            <option class="sort-item" value="price_low">Lowering in price</option>
+                        </select>
+                    </div>
+                    <search>
+                      <form action="" class="search-button">
+                        <input type="search" placeholder="Search NFT" class="button button-search">
+                      </form>
+                    </search>
+                </form>
+            </div>
+            <div class="product-items">
+                <div class="product-container">
+                    <ul class="catalog-list">
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">Popular</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">Sold out</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                        <li class="catalog-item">
+                            <article class="catalog-product">
+                                <p class="label">New</p>
+                                <img src="img/big-face.webp" alt="Woman face" class="product-image" width="272" height="324">
+                                <p class="product-price">$199</p>
+                                <h3 class="product-name">Name Product</h3>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="main-footer">
+      <div class="main-footer__left">
+        <svg class="binabox-logo-blue" width="188" height="42">
+            <use href="/img/icons/sprite.svg#logo-blue"></use>
+        </svg>
+        <p class="main-footer__text">We are the best way to check the rarity of NFT collection.</p>
+      </div>
+      <div class="main-footer__right">
+        <div class="main-footer__right__subscribe">
+          <h3 class="main-footer__right__header">Subscribe</h3>
+          <ul class="main-footer_nav-list">
+            <li class="nav-items"><a href="" class="home-link"></a>Home</li>
+            <li class="nav-items"><a href="blog-article.html" class="blog-link"></a>Blog</li> 
+            <li class="nav-items"><a href="" class="catalog-link"></a>Catalog</li>
+            <li class="nav-items"><a href="contact-us.html" class="contact-link"></a>Contact Us</li>
+          </ul>
+        </div>
+        <div class="main-footer__right__company">
+          <h3 class="main-footer__right__header">Company</h3>
+          <ul class="main-footer_nav-list">
+            <li class="nav-items"><a href="" class="tnc-link"></a>Terms and Conditions</li>
+            <li class="nav-items"><a href="" class="privacy-link"></a>Privacy Policy</li>
+            <li class="nav-items"><a href="" class="whitepaper-link"></a>Whitepaper</li>
+            <li class="nav-items"><a href="" class="help-center-link"></a>Help Center</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bot-footer">
+      <div class="bot-footer__left">
+        <p class="bot-footer__text">BINABOX 2022 - ALL rights reserved</p>
+      </div>
+      <div class="bot-footer__right">
+        <ul class="social-media__list">
+          <li class="social-media__icon">
+            <a href="https://x.com" class="social-media-link">
+                <svg class="twitter-link" width="40" height="40">
+                    <use href="/img/icons/sprite.svg#twitter-icon"></use>
+                </svg>               
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="https://facebook.com" class="social-media-link">
+                <svg class="facebook-link" width="40" height="40">
+                    <use href="/img/icons/sprite.svg#facebook-icon"></use>
+                </svg>
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="https://telegram.com" class="social-media-link">
+                <svg class="telegram-link" width="40" height="40">
+                    <use href="/img/icons/sprite.svg#telegram-icon"></use>
+                </svg>   
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="https://youtube.com" class="social-media-link">
+                <svg class="youtube-link" width="40" height="40">
+                    <use href="/img/icons/sprite.svg#youtube-icon"></use>
+                </svg>   
+            </a>
+            </li>
+          <li class="social-media__icon">
+            <a href="https://tiktok.com" class="social-media-link">
+              <svg class="tiktok-link" width="40" height="40">
+                  <use href="/img/icons/sprite.svg#tik-tok-icon"></use>
+              </svg>            
+            </a>
+          </li>
+          <li class="social-media__icon">
+            <a href="https://discord.com" class="social-media-link">
+                <svg class="discord-media-link" width="40" height="40">
+                    <use href="/img/icons/sprite.svg#discord-icon"></use>
+                </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
+
