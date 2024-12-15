@@ -15,6 +15,7 @@
     rgba(2, 101, 220, 0.5) 0%,
     rgba(2, 101, 220, 0) 30%
     );  
+  
 }
 
 .headline-text {
@@ -262,7 +263,6 @@
 }
 
 .product-image {
-  background-color: #0265DC;
   width: 100%;
   height: auto;
 }
@@ -294,7 +294,6 @@
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .section-name {
@@ -308,10 +307,10 @@
 }
 
 .sonic-live {
-  min-width: 512px;
   padding: 24px;
   background-color: #1D1C28;
   box-sizing: border-box;
+  height: auto;
 
 }
 .grid-row-span {
@@ -319,15 +318,17 @@
 }
 
 .sonic-live-small {
-  min-width: 512px;
   padding: 24px;
   gap: 10px;
   background-color: #1D1C28;
   box-sizing: border-box;
+  height: auto;
 }
 
-.big-face-image, small-face-image {
+.big-face-image, .small-face-image {
   background-color: #0265DC;
+  width: 100%;
+  height: auto;
 }
 
 .label-NFT {
@@ -476,6 +477,20 @@
     url(/img/icons/bot-right-corner.svg) bottom right / 20% auto no-repeat,
     url(/img/icons/top-left-corner.svg) top left / 20% auto no-repeat,
     #1A1925;
+  position: relative;
+}
+
+.about-us__container::before {
+  counter-increment: counter;
+  content: counters(counter, ".", decimal-leading-zero);
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: blue;
+  font-size: 80px;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  position: absolute;
 }
 
 .skills-name {
@@ -484,6 +499,7 @@
   margin-top: 50px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
+  position: relative;
 }
 
 .skills-description {
@@ -492,6 +508,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  counter-reset: counter;
 }
 
 .our-team {
@@ -512,14 +529,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1300px;
   gap: 40px;
   box-sizing: border-box;
   flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+
 }
 
 .our-team__item {
-  min-width: 293px;
   padding: 32px;
   gap: 16px;
   list-style: none;
@@ -555,6 +574,15 @@
   margin: 30px;
   align-items: center;
   justify-content: space-between;
+}
+
+.social-media-items {
+  text-decoration: none;
+  color: white;
+}
+
+.social-media-items:hover {
+  color: blue;
 }
 
 .social-media-list {
