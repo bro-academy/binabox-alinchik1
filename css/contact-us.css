@@ -47,32 +47,16 @@
 }
 
 .contacts {
-  padding: 64px;
+  padding: 64px 0;
   gap: 16px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.location {
-  height: 232px;
-  min-width: 328px;
-  max-width: 328px;
-  border: 1px solid rgba(212, 217, 242, 0.26);
-  padding: 40px 32px;
-}
-
-.email {
-  height: 232px;
-  min-width: 328px;
-  max-width: 328px;
-  border: 1px solid rgba(212, 217, 242, 0.26);
-  padding: 40px 32px;
-}
-
-.phone {
-  height: 232px;
-  min-width: 328px;
-  max-width: 328px;
+.contacts__items { 
   border: 1px solid rgba(212, 217, 242, 0.26);
   padding: 40px 32px;
 }

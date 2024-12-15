@@ -10,6 +10,7 @@ body {
     justify-content: space-between;
     padding: 32px;
     color: #0D0D15;
+    flex-wrap: wrap;
   }
   
   .binabox {
@@ -35,7 +36,7 @@ body {
     border: none;
   }
   
-  .card--active {
+  .nav-link--active {
     color: #F5F8FB;
     text-decoration: none;
     font-weight: 600;
@@ -48,6 +49,7 @@ body {
   
   .header-buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: transparent;
     text-decoration: none;
@@ -55,8 +57,7 @@ body {
     color:#F8F7FF;
     border: 0px;  
     gap: 16px;
-    width: 547px;
-    height: 48px;
+    padding: 0;
   }
   
   .button-search {
@@ -134,6 +135,8 @@ body {
     url(/img/icons/connect-icon.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
+    border: none
+    ;
   }
 
 .footer {
@@ -212,8 +215,16 @@ body {
   .social-media__list {
     display: flex;
     list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
   }
-  
+
+.social-media-link {
+  color: white;
+}
+.social-media-link:hover {
+  color: blue;
+}
   .social-media__icon {
     width: 40px;
     height: 40px;
