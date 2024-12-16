@@ -1,12 +1,21 @@
 .blog-banner {
-    height: 374px;
+    position: relative;
     padding-top: 64px;
     gap: 64px;
-    background: 
-    url(/img/blog-page-banner-wave.webp) bottom / 1728px 134px no-repeat,
-    url(/img/blog-page-banner.webp) top / 1728px 375px no-repeat;
-    background-color: #1A1925;
+    min-height: 375px;
 }
+
+.blog-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+    url(/img/blog-page-banner-wave.webp) bottom / 100% auto no-repeat,
+    url(/img/blog-page-banner.webp) top / 120% auto no-repeat;
+    background-position: bottom -1px center, bottom -370px center;
+    opacity: 0.2;
+    background-color: gray;
+  }
 
 .blog-banner__header {
     font-family: 'Bakbar One', Arial, sans-serif;
