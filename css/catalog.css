@@ -1,16 +1,23 @@
 .banner {
-    width: 1728px;
-    min-height: 374px;
+    position: relative;
     padding-top: 64px;
     gap: 64px;
-    background: 
-    url(/img/blog-page-banner-wave.webp) bottom / 1728px 134px no-repeat,
-    url(/img/blog-page-banner.webp) top / 1728px 375px no-repeat;
-    background-color: #1A1925;
+    min-height: 375px;
 }
 
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+    url(/img/blog-page-banner-wave.webp) bottom / 100% auto no-repeat,
+    url(/img/blog-page-banner.webp) top / 120% auto no-repeat;
+    background-position: bottom -1px center, bottom -370px center;
+    opacity: 0.2;
+    background-color: gray;
+  }
+
 .banner__header {
-    width: 1600px;
     font-family: 'Bakbar One', Arial, sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -38,19 +45,16 @@
     text-align: center;
     color: rgba(231, 238, 247, 0.66);
     gap: 8px;
-    width: 67px;
     padding: 6px 12px;
     gap: 8px;
 }
   
 .category {
-    width: 320px;
     padding: 24px;
     gap: 16px;
 }
 
 .category__header {
-    width: 272px;
     border-bottom: 1px solid rgba(191, 197, 238, 0.12);
     padding: 16px;
     font-family: 'Bakbar One', Arial, sans-serif;
@@ -60,7 +64,6 @@
 }
 
 .category__options {
-    width: 320px;
     padding: 24px;
     gap: 16px;
     display: flex;
@@ -184,20 +187,17 @@ fieldset {
 }
 
 .product-listing {
-    width: 1024px;
     min-width: 328px;
     max-width: 1024px;
     gap: 32px;
 }
 
 .all-items {
-    width: 1024px;
     gap: 16px;
     display: flex;
 }
 
 .product-search__header {
-    width: 424px;
     font-family: 'Bakbar One', Arial, sans-serif;
     font-weight: 400px;
     font-size: 36px;
@@ -229,11 +229,16 @@ fieldset {
 }
 
 .sort-options select:hover {
-    border: 4px solid rgba(56, 146, 243, 1);
+    border-color: rgba(56, 146, 243, 1);
+    outline: 2px solid rgba(56, 146, 243, 1);
 }
 
 .sort-options select:focus {
     border: 2px solid rgba(2, 101, 220, 1);
+}
+
+.sort-options select:focus-visible {
+    outline: unset;
 }
 
 .sorting-search {
@@ -265,9 +270,6 @@ fieldset {
 
 .product-image {
     background-color: blue;
-    width: 272px;
-    height: 324px;
-
 }
 
 .catalog__main-section {

@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 64px 200px;
-  width: 1,728px;
   gap: 32px;
   background: 
     url(/img/big-cube.webp) center right / 576px 576px no-repeat,
@@ -16,6 +15,7 @@
     rgba(2, 101, 220, 0.5) 0%,
     rgba(2, 101, 220, 0) 30%
     );  
+  
 }
 
 .headline-text {
@@ -24,7 +24,6 @@
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
-  width: 1328px;
   color: #F5F8FB;
   gap: 8px;
 }
@@ -34,7 +33,6 @@
 }
 
 .title-description {
-  width: 1328px;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -47,7 +45,6 @@
 }
 
 .achievement-info {
-  width: 119px;
   gap: 4px;
   list-style-type: none;
   font-weight: 400;
@@ -59,7 +56,6 @@
 .achievement-amount {
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
-  width: 119px;
   gap: 4px;
   font-size: 44px;
   line-height: 56px;
@@ -84,6 +80,7 @@
   font-size: 18px;
   line-height: 28px;
   align-items: center;
+  border: none;
 }
 
 .whitelist-now {
@@ -97,14 +94,12 @@
 }
 
 .catalog {
-  width: 1728px;
   padding: 64px;
   gap: 40px;
   justify-content: space-between;
 }
 
 .section-navigation {
-  width: 1600px;
   gap: 32px;
   display: flex;
   align-items: center;
@@ -116,8 +111,15 @@
   align-items: center;
 }
 
+.section-navigation::before {
+  content: '';
+  height: 2px;
+  width: 100px;
+  flex-grow: 1;
+  background-color: rgba(208, 215, 251, 0.17);
+}
+
 .catalog__header {
-  width: 115px;
   padding: 2px 2px;
   gap: 8px;
   font-family: 'Bakbar One', Arial, sans-serif;
@@ -127,11 +129,12 @@
   display: flex;
   align-self: center;
   align-items: center;
+  order: -1;
 }
 
 .catalog__header::after {
-  content: url(/img/icons/seporator.svg);
-  width: 1167px;
+  /* content: url(/img/icons/seporator.svg); */
+  /* content: ''; */
   height: 2px;
   border-radius: 2px;
   justify-content: space-between;
@@ -140,8 +143,7 @@
 }
 
 .see-all, .move-right, .move-left {
-  width: 254px;
-  height: 48px;
+  min-height: 48px;
   gap: 16px;
   text-decoration: none;
   font-weight: 600;
@@ -156,6 +158,7 @@
   border: 2px solid rgba(208, 215, 251, 0.17);
   font-size: 18px;
   line-height: 28px;
+  min-width: 254px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,16 +203,7 @@
   width: 1px;
 }
 
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 1600px;
-  gap: 24px;
-}
-
 .catalog-list {
-  width: 100%;
   gap: 24px;
   padding: 0;
   list-style: none;
@@ -218,16 +212,15 @@
 }
 
 .catalog-item {
-  width: 300.8px;
   padding: 24px;
   gap: 24px;
   position: relative;
   background-color: #1D1C28;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .catalog-product {
-  width: 100%;
   position: relative;
 }
 
@@ -270,18 +263,15 @@
 }
 
 .product-image {
-  width: 240px;
-  height: 324px;
-  background-color: #0265DC;
+  width: 100%;
+  height: auto;
 }
 
 .product-description {
-  width: 240px;
   gap: 8px;
 }
 
 .product-price {
-  width: 240px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -290,7 +280,6 @@
 }
 
 .product-name {
-  width: 240px;
   font-weight: 500;
   font-size: 20px;
   line-height: 0px;
@@ -298,7 +287,6 @@
 }
 
 .our-blog {
-  width: 1728px;
   padding: 64px;
   gap: 40px;
 }
@@ -306,11 +294,9 @@
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .section-name {
-  width: 1600px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -321,11 +307,10 @@
 }
 
 .sonic-live {
-  width: 784px;
-  min-width: 512px;
   padding: 24px;
   background-color: #1D1C28;
   box-sizing: border-box;
+  height: auto;
 
 }
 .grid-row-span {
@@ -333,17 +318,17 @@
 }
 
 .sonic-live-small {
-  width: 784px;
-  min-width: 512px;
   padding: 24px;
   gap: 10px;
   background-color: #1D1C28;
   box-sizing: border-box;
+  height: auto;
 }
 
-.big-face-image, small-face-image {
-  width: 100%;
+.big-face-image, .small-face-image {
   background-color: #0265DC;
+  width: 100%;
+  height: auto;
 }
 
 .label-NFT {
@@ -364,17 +349,14 @@
 }
 
 .big-face-image {
-  width: 736px;
-  height: 640px;
+  background-color: #0265DC;
 }
 
 .small-face-image {
-  width: 736px;
-  height: 174px;
+  background-color: #0265DC;
 }
 
 .article-content-block {
-  width: 736px;
   gap: 16px;
 }
 
@@ -386,7 +368,6 @@
 }
 
 .artist-name, .time {
-  width: 94px;
   gap: 8px;
   font-weight: 600;
   font-size: 14px;
@@ -407,7 +388,6 @@
 }
 
 .article-name {
-  width: 736px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -416,7 +396,6 @@
 }
 
 .article-content {
-  width: 736px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -424,7 +403,6 @@
 
 .read-more {
   text-decoration: none;
-  width: 161px;
   height: 40px;
   padding-top: 8px;
   padding-right: 20px;
@@ -461,7 +439,6 @@
 }
 
 .about-us {
-  width: 1728px;
   padding: 64px;
   gap: 40px;
   display: flex;
@@ -475,7 +452,6 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  width: 960px;
   align-content: center;
   align-self: center;
   margin-bottom: 40px;
@@ -501,6 +477,20 @@
     url(/img/icons/bot-right-corner.svg) bottom right / 20% auto no-repeat,
     url(/img/icons/top-left-corner.svg) top left / 20% auto no-repeat,
     #1A1925;
+  position: relative;
+}
+
+.about-us__container::before {
+  counter-increment: counter;
+  content: counters(counter, ".", decimal-leading-zero);
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: blue;
+  font-size: 80px;
+  font-family: 'Bakbar One', Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  position: absolute;
 }
 
 .skills-name {
@@ -509,6 +499,7 @@
   margin-top: 50px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
+  position: relative;
 }
 
 .skills-description {
@@ -517,17 +508,16 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  counter-reset: counter;
 }
 
 .our-team {
-  width: 1728px;
   padding: 64px;
   gap: 40px;
 }
 
 .our-team__header {
   text-align: center;
-  width: 1600px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -539,15 +529,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1300px;
   gap: 40px;
   box-sizing: border-box;
   flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+
 }
 
 .our-team__item {
-  width: 293px;
-  min-width: 293px;
   padding: 32px;
   gap: 16px;
   list-style: none;
@@ -556,7 +547,6 @@
 }
 
 .profile-picture {
-  width: 127px;
   top: -7px;
   left: -6px;
   border-radius: 50%;
@@ -580,11 +570,19 @@
 }
 
 .social-media {
-  width: 266px;
   gap: 8px;
   margin: 30px;
   align-items: center;
   justify-content: space-between;
+}
+
+.social-media-items {
+  text-decoration: none;
+  color: white;
+}
+
+.social-media-items:hover {
+  color: blue;
 }
 
 .social-media-list {
@@ -596,7 +594,6 @@
 }
 
 .faq {
-  width: 1728px;
   padding-top: 64px;
   padding-right: 64px;
   padding-bottom: 104px;
@@ -604,13 +601,11 @@
   gap: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .faq__header {
-  width: 1600px;
   font-family: 'Bakbar One', Arial, sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -621,7 +616,6 @@
 }
 
 .faq__summary {
-  width: 960px;
   padding: 24px;
   gap: 16px;
   font-family: 'Bakbar One', Arial, sans-serif;
@@ -629,15 +623,17 @@
   font-size: 24px;
   line-height: 32px;
   background-color: #1D1C28;
-  background-image: url(/img/icons/plus-button-icon.svg);
   background-repeat: no-repeat;
   background-position: center right 50px;
   list-style: none;
   background-image: url(/img/icons/minus-button-icon.svg);
 }
 
+.faq__details[open] .faq__summary {
+  background-image: url(/img/icons/plus-button-icon.svg);
+}
+
 .faq__answer {
-  width: 912px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -645,4 +641,6 @@
   line-height: none;
   background-repeat: no-repeat;
   background-position: center right 50px;
+  padding: 16px;
+  margin-top: 0px;
 }

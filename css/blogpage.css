@@ -1,16 +1,23 @@
 .blog-banner {
-    width: 1728px;
-    height: 374px;
+    position: relative;
     padding-top: 64px;
     gap: 64px;
-    background: 
-    url(/img/blog-page-banner-wave.webp) bottom / 1728px 134px no-repeat,
-    url(/img/blog-page-banner.webp) top / 1728px 375px no-repeat;
-    background-color: #1A1925;
+    min-height: 375px;
 }
 
+.blog-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+    url(/img/blog-page-banner-wave.webp) bottom / 100% auto no-repeat,
+    url(/img/blog-page-banner.webp) top / 120% auto no-repeat;
+    background-position: bottom -1px center, bottom -370px center;
+    opacity: 0.2;
+    background-color: gray;
+  }
+
 .blog-banner__header {
-    width: 1600px;
     font-family: 'Bakbar One', Arial, sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -21,7 +28,6 @@
 }
 
 .blog-banner__nav-list {
-    width: 1600px;
     gap: 8px;
     display: flex;
     list-style: none;
@@ -46,7 +52,6 @@
     text-align: center;
     color: #F5F8FB;
     gap: 8px;
-    width: 67px;
     padding: 6px 12px;
     gap: 8px;
     display: flex;
@@ -72,36 +77,31 @@
     text-align: center;
     color: rgba(231, 238, 247, 0.66);
     gap: 8px;
-    width: 67px;
     padding: 6px 12px;
     gap: 8px;
 }
 
 .content {
-    width: 1728px;
     padding-top: 64px;
     padding-bottom: 104px;
     padding-right: 64px;
     padding-left: 64px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 328px 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+
 }
 
 
 .blog-article {
-    width: 920px;
     min-width: 288px;
     max-width: 1024px;
     gap: 32px;
 }
 
-.dragon-image {
-    width: 920px;
-    height: 557px;
-}
-
 .category-gaming {
-    width: 122px;
     padding: 10px 24px;
     gap: 8px;
     color: #F5F8FB;
@@ -131,7 +131,6 @@
   }
   
   .metadata__artist-name, .metadata__time {
-    width: 84px;
     gap: 8px;
     font-weight: 600;
     font-size: 14px;
@@ -164,12 +163,10 @@
   
 .blog-list-name {
     list-style: none;
-    width: 135px;
     gap: 8px;
 }
 
 .blog-list__item {
-    width: 97ox;
     padding-left: 70px;
     padding-bottom: 20px;
     font-weight: 400;
@@ -185,7 +182,6 @@
 }
 
 .quote {
-    width: 920px;
     border-radius: 16px;
     padding: 16px;
     gap: 8px;
@@ -200,7 +196,6 @@
 }
 
 .quote__rating {
-    width: 888px;
     gap: 8px;
     padding-left: 40px;
     background-image: url(/img/icons/rating-stars-icon.svg);
@@ -223,15 +218,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 920px;
     padding-top: 40px;
 }
 .article-links {
-    width: 288px;
     min-width: 288px;
     gap: 12px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .tags__header, .share__header {
@@ -243,13 +236,12 @@
 .tags-list, .share__list {
     list-style: none;
     display: flex;
+    gap: 8px;
 }
 
 .tags__items, .share__items {
     text-decoration: none;
-    width: 50px;
     border: 2px;
-    padding: 6px 12px;
     gap: 8px;
     border-color: rgba(208, 215, 251, 0.17);
     color: #F5F8FB;
@@ -260,7 +252,6 @@
 
 .tags__link {
     text-decoration: none;
-    width: 50px;
     padding: 6px 12px;
     gap: 8px;
     border: 2px solid rgba(208, 215, 251, 0.17);
@@ -271,7 +262,6 @@
 }
 
 .share__link {
-    width: 32px;
     padding: 8px;
     gap: 8px;
     border: 2px solid rgba(208, 215, 251, 0.17);
@@ -284,34 +274,29 @@
 }
 
 .left-block {
-    width: 328px;
     min-width: 328px;
     gap: 21px;
     order: -1;
 }
 
 .categories {
-    width: 328px;
     padding: 24px;
     gap: 16px;
     background-color: #1D1C28;
 }
 
 .categoies__header, .tags__header {
-    width: 280px;
     border-bottom: 1px;
-    padding-bottom: 16px;
     gap: 16px;
 }
 
 .categories__list {
-    width: 280px;
     gap: 8px;
+    padding: 0;
 }
 
 .categories__item {
     list-style: none;
-    width: 280px;
     min-width: 200px;
     padding: 6px 12px;
     gap: 8px;
@@ -323,11 +308,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    width: 256px;
 }
 
 .tags-links {
-    width: 328px;
     padding: 24px;
     gap: 16px;
     background-color: #1D1C28;
@@ -338,12 +321,13 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding-right: 100px;
-    justify-content: space-between;
+    padding: 0;
+    gap: 8px;
 }
 
 .tags__items {
     text-decoration: none;
+    display: flex;
 }
 
 

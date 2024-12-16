@@ -8,9 +8,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1728px;
     padding: 32px;
     color: #0D0D15;
+    flex-wrap: wrap;
   }
   
   .binabox {
@@ -36,13 +36,12 @@ body {
     border: none;
   }
   
-  .card--active {
+  .nav-link--active {
     color: #F5F8FB;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 2px solid #0265DC;
     gap: 8px;
-    width: 89px;
     padding: 8px 20px;
     font-size: 16px;
     line-height: 24px;
@@ -50,6 +49,7 @@ body {
   
   .header-buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: transparent;
     text-decoration: none;
@@ -57,8 +57,7 @@ body {
     color:#F8F7FF;
     border: 0px;  
     gap: 16px;
-    width: 547px;
-    height: 48px;
+    padding: 0;
   }
   
   .button-search {
@@ -136,10 +135,11 @@ body {
     url(/img/icons/connect-icon.svg);
     background-repeat: no-repeat;
     background-position: center left 10px;
+    border: none
+    ;
   }
 
 .footer {
-    width: 1728px;
     padding-top: 64px;
     padding-right: 64px;
     padding-bottom: 32px;
@@ -149,37 +149,31 @@ body {
   }
   
   .main-footer {
-    width: 1600px;
     justify-content: space-between;
     display: flex;
   }
   
   .main-footer__left {
-    width: 309px;
     gap: 12px;
   }
   
   .main-footer__logo {
-    width: 188px;
     height: 42px;
   }
   
   .main-footer__text {
-    width: 320px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
   }
   
   .main-footer__right {
-    width: 328px;
     max-width: 360px;
     gap: 24px;
     display: flex;
   }
   
   .main-footer__right__header {
-    width: 101px;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -192,7 +186,6 @@ body {
   }
   
   .nav-items {
-    width: 37px;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -200,16 +193,11 @@ body {
   }
   
   .bot-footer {
-    width: 1600px;
     border-top: 1px;
     justify-content: space-between;
     padding-top: 32px;
     border-top: 1px solid rgba(191, 197, 238, 0.12);
     align-self: center;
-  }
-  
-  .bot-footer__left {
-    width: 242px;
   }
   
   .bot-footer__text {
@@ -220,7 +208,6 @@ body {
   }
   
   .bot-footer__right {
-    width: 280px;
     gap: 8px;
     margin-left: 75%;
   }
@@ -228,8 +215,16 @@ body {
   .social-media__list {
     display: flex;
     list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
   }
-  
+
+.social-media-link {
+  color: white;
+}
+.social-media-link:hover {
+  color: blue;
+}
   .social-media__icon {
     width: 40px;
     height: 40px;
